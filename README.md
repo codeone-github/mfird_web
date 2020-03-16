@@ -1,7 +1,7 @@
 # mfird-web
 
- - [x] `index.html` is an root html file to run web page.
- - [x] `index.css` is an main css file
+ - [x] `index.html` is a root html file to run web page.
+ - [x] `index.css` is a main css file
  
  #### Instructions
  
