@@ -16,28 +16,28 @@
   line-height: 22px;
 }
 
-.heroContent {
-  background-image: url("/image/hero-img.jpeg");
+.hero-content {
+  background-image: url("images/hero-img.jpeg");
   height: 500px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.heroContent h1 {
+.hero-content h1 {
   color: whitesmoke;
   letter-spacing: 2px;
   text-align: center;
   padding: 70px 10px 20px 20px;
 }
-.visionMission {
+.vision-mission {
   width: 80%;
   border: 1px solid rgb(179, 139, 9);
   margin: 20px;
   border-radius: 5px;
   padding: 20px;
 }
-.visionMission ul li {
+.vision-mission ul li {
   padding: 5px;
   margin-left: 20px;
 }
@@ -47,7 +47,4 @@
   color: rgba(150, 99, 5, 0.938);
   position: relative;
   left: 35%;
-}
-.content {
-  margin-top: 0px;
 }
