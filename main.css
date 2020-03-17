@@ -33,7 +33,6 @@ a {
 
 .cryptography {
   margin: 5px;
-
   background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
   text-align: center;
   height: 45vh;
@@ -44,7 +43,6 @@ a {
 
 .ethical {
   margin: 5px;
-
   background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
   color: white;
   text-align: center;
