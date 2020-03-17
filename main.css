@@ -6,22 +6,24 @@
 html {
   font-family: "Lato", sans-serif;
 }
-
-.iot {
-  height: 45vh;
+.comman-class {
   padding: 10px;
-  margin: 5px;
-  background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
-  color: whitesmoke;
+  border-radius: 8px;
+  margin: 10px 10px;
+  color: white;
+  flex-grow: 2;
   text-align: center;
-  line-height: 20px;
+}
+.iot {
+  background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
 }
 
-p {
+.integreting p {
   margin: 20px 10px;
   text-align: left;
+  line-height: 20px;
 }
-a {
+.integreting a {
   font-size: 14px;
   display: inline-block;
   color: white;
@@ -30,31 +32,21 @@ a {
   border-radius: 16px;
   background-color: black;
 }
+.integreting a:hover {
+  background-color: rgba(22, 21, 21, 0.8);
+}
 
 .cryptography {
-  margin: 5px;
   background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
-  text-align: center;
-  height: 45vh;
-  padding: 10px;
-  line-height: 20px;
-  color: white;
 }
 
 .ethical {
-  margin: 5px;
   background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
-  color: white;
-  text-align: center;
-  height: 45vh;
-  padding: 10px;
-  line-height: 20px;
 }
 
 .motiv {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   align-items: center;
   align-content: center;
   width: 80%;
@@ -123,20 +115,24 @@ a {
   float: right;
 }
 .navigation-menu {
-  width: 110%;
+  width: 100%;
+  margin-top: 60px;
+  float: right;
+  margin-top: -10cm;
+  background-color: white;
   line-height: 30px;
   display: none;
   padding: 10px;
   position: absolute;
-  left: 0px;
+left: 10px;
   text-align: center;
-  /* display: flex;
-  flex-direction: column; */
+  
   color: black;
   margin-top: 50px;
   margin-left: 0;
   margin-left: -10px;
   padding-bottom: 10px;
+  
 }
 .navigation-menu ul {
   display: flex;
@@ -180,7 +176,7 @@ a {
   }
   .navigation-menu ul a {
     display: inline;
-    width: 15%;
+   
   }
   .navigation-menu ul {
     display: flex;
@@ -198,4 +194,30 @@ a {
   .menu {
     display: none;
   }
+
+@media screen and (min-width: 768px) {
+  .integreting {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .integreting {
+    justify-content: center;
+    align-items: baseline;
+  }
+  .comman-class {
+    margin: 20px 40px 20px 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .integreting {
+    margin: 20px 150px;
+  }
+}
+.button {
+  width: 100%;
 }
