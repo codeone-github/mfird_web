@@ -3,16 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-family: "Lato", sans-serif;
+}
 
 .iot {
-  height: 40vh;
+  height: 45vh;
   padding: 10px;
-  background: linear-gradient(rgba(153, 45, 45, 1), rgba(211, 211, 211, 0.1)),
-    url(images/iot.jpg) center/cover no-repeat;
+  margin: 5px;
+  background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
   color: whitesmoke;
   text-align: center;
   line-height: 20px;
-  animation: iot 2s infinite;
 }
 
 p {
@@ -20,11 +22,11 @@ p {
   text-align: left;
 }
 a {
+  font-size: 14px;
   display: inline-block;
   color: white;
   text-decoration: none;
-  width: 80px;
-  padding: 5px;
+  padding: 3px 10px 5px 10px;
   border-radius: 16px;
   background-color: black;
 }
@@ -42,15 +44,14 @@ a {
 }
 
 .cryptography {
-  background: linear-gradient(rgba(94, 87, 87, 0.1), rgba(70, 37, 37, 0.4)),
-    url(images/crytography.jpg) center/cover no-repeat;
+  margin: 5px;
+
+  background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
   text-align: center;
   height: 45vh;
   padding: 10px;
   line-height: 20px;
   color: white;
-  box-shadow: 2px 2px 15px skyblue;
-  animation: cryptography 2s infinite;
 }
 @keyframes cryptography {
   0% {
@@ -62,14 +63,14 @@ a {
 }
 
 .ethical {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(211, 211, 211, 0.1)),
-    url(images/ethical-hacking.jpg) center/cover no-repeat;
+  margin: 5px;
+
+  background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
   color: white;
   text-align: center;
-  height: 40vh;
+  height: 45vh;
   padding: 10px;
   line-height: 20px;
-  animation: iot 2s infinite;
 }
 .ethical:hover {
   animation: none;
