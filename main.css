@@ -91,6 +91,7 @@ html {
   display: inline-block;
   margin-bottom: 20px;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -114,18 +115,33 @@ html {
   float: right;
 }
 .navigation-menu {
+  width: 100%;
   margin-top: 60px;
   float: right;
   margin-top: -10cm;
-  width: 100%;
   background-color: white;
   line-height: 30px;
   display: none;
-  box-shadow: black;
   padding: 10px;
   position: absolute;
-  left: 0px;
+left: 10px;
   text-align: center;
+  
+  color: black;
+  margin-top: 50px;
+  margin-left: 0;
+  margin-left: -10px;
+  padding-bottom: 10px;
+  
+}
+.navigation-menu ul {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.navigation-menu ul li {
+  background-color: white;
+  color: black;
 }
 .navigation-menu ul {
   list-style: none;
@@ -140,14 +156,44 @@ html {
   left: 0;
   background-color: white;
 }
-
-.button:hover .navigation-menu {
-  display: block;
-  margin-top: 60px;
+.close {
+  height: 20px;
+  width: 20px;
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
-.button:hover .logo {
+.menu:hover ~ .navigation-menu {
+  display: block;
+}
+.close:hover ~ .navigation-menu {
   display: none;
 }
+@media only screen and (min-width: 768px) {
+  .navigation-menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .navigation-menu ul a {
+    display: inline;
+   
+  }
+  .navigation-menu ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
+    width: 94%;
+    margin-right: -10px;
+    position: relative;
+    left: 38%;
+    height: 10px;
+  }
+  .close {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
 
 @media screen and (min-width: 768px) {
   .integreting {
