@@ -115,22 +115,38 @@ html {
 }
 .navigation-menu {
   margin-top: 60px;
+  float: right;
+  margin-top: -10cm;
+  width: 100%;
   background-color: white;
   line-height: 30px;
   display: none;
   box-shadow: black;
   padding: 10px;
+  position: absolute;
+  left: 0px;
+  text-align: center;
 }
 .navigation-menu ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .navigation-menu ul a {
   text-decoration: none;
   color: black;
+  position: relative;
+  left: 0;
+  background-color: white;
 }
 
 .button:hover .navigation-menu {
   display: block;
+  margin-top: 60px;
+}
+.button:hover .logo {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -155,4 +171,7 @@ html {
   .integreting {
     margin: 20px 150px;
   }
+}
+.button {
+  width: 100%;
 }
