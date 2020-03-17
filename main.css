@@ -20,6 +20,7 @@
   background-image: url("images/hero-img.jpeg");
   height: 500px;
   width: 100%;
+  object-fit: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,4 +48,46 @@
   color: rgba(150, 99, 5, 0.938);
   position: relative;
   left: 35%;
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  border-bottom: solid 0.5px #cecece;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 60px;
+  height: 50px;
+}
+.menu {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  float: right;
+}
+.navigationMenu {
+  margin-top: 60px;
+  width: 100%;
+  position: relative;
+  line-height: 30px;
+  display: none;
+  box-shadow: black;
+
+  padding: 10px;
+}
+.navigationMenu ul {
+  list-style: none;
+}
+.navigationMenu ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover .navigationMenu {
+  display: block;
 }
