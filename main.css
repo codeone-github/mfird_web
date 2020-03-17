@@ -57,11 +57,10 @@ html {
 }
 
 .hero-content {
-  background-image: url("images/hero-img.jpeg");
+  background-image: url("images/hero-img-2.jpg");
   height: 500px;
   width: 100%;
   object-fit: contain;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -69,27 +68,36 @@ html {
   color: whitesmoke;
   letter-spacing: 2px;
   text-align: center;
-  padding: 70px 10px 20px 20px;
+  padding: 130px 10px 20px 20px;
 }
 .vision-mission {
   width: 80%;
-  border: 1px solid rgb(179, 139, 9);
+  border: 1px solid rgb(33, 63, 172);
+  box-shadow: 5px 10px #888888;
   margin: 20px;
   border-radius: 5px;
   padding: 20px;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.vision-mission p {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 .vision-mission ul li {
   padding: 5px;
   margin-left: 20px;
+  text-align: left;
 }
 .head-span {
   font-size: 20px;
   font-weight: 600;
-  color: rgba(150, 99, 5, 0.938);
-  position: relative;
-  left: 35%;
-  display: inline-block;
-  margin-bottom: 20px;
+  color: rgb(33, 63, 172);
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .header {
@@ -114,6 +122,35 @@ html {
   margin-top: 20px;
   float: right;
 }
+footer {
+  margin-bottom: 50px;
+  background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
+  color: white;
+  text-align: center;
+  font-size: small;
+  display: block;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.contact section {
+  margin-bottom: 16px;
+}
+.contact section img {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+.contact p {
+  text-align: center;
+}
+
 .navigation-menu {
   width: 100%;
   margin-top: 60px;
@@ -124,15 +161,14 @@ html {
   display: none;
   padding: 10px;
   position: absolute;
-left: 10px;
+  left: 10px;
   text-align: center;
-  
+
   color: black;
   margin-top: 50px;
   margin-left: 0;
   margin-left: -10px;
   padding-bottom: 10px;
-  
 }
 .navigation-menu ul {
   display: flex;
@@ -142,12 +178,15 @@ left: 10px;
 .navigation-menu ul li {
   background-color: white;
   color: black;
+  margin-left: 20px;
 }
 .navigation-menu ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: absolute;
+  right: 0;
 }
 .navigation-menu ul a {
   text-decoration: none;
@@ -176,7 +215,6 @@ left: 10px;
   }
   .navigation-menu ul a {
     display: inline;
-   
   }
   .navigation-menu ul {
     display: flex;
@@ -185,7 +223,7 @@ left: 10px;
     width: 94%;
     margin-right: -10px;
     position: relative;
-    left: 38%;
+    left: 65%;
     height: 10px;
   }
   .close {
@@ -194,7 +232,7 @@ left: 10px;
   .menu {
     display: none;
   }
-
+}
 @media screen and (min-width: 768px) {
   .integreting {
     display: flex;
