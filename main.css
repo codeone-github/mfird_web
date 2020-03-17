@@ -6,7 +6,6 @@
 .motiv {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   align-items: center;
   align-content: center;
   width: 80%;
@@ -23,7 +22,6 @@
   object-fit: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 .hero-content h1 {
   color: whitesmoke;
