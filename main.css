@@ -40,8 +40,17 @@
 .navigationMenu ul a {
   text-decoration: none;
   color: black;
+  position: relative;
+  left: 0;
 }
 
 .button:hover .navigationMenu {
   display: block;
+}
+.button {
+  width: 100%;
+}
+li {
+  position: relative;
+  left: 20%;
 }
