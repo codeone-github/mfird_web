@@ -125,7 +125,7 @@ a {
   float: right;
 }
 .navigation-menu {
-  width: 100%;
+  width: 110%;
   line-height: 30px;
   display: none;
   padding: 10px;
@@ -136,6 +136,9 @@ a {
   flex-direction: column; */
   color: black;
   margin-top: 50px;
+  margin-left: 0;
+  margin-left: -10px;
+  padding-bottom: 10px;
 }
 .navigation-menu ul {
   display: flex;
@@ -164,6 +167,7 @@ a {
   width: 20px;
   align-self: center;
   margin-top: 10px;
+  margin-bottom: 5px;
 }
 .menu:hover ~ .navigation-menu {
   display: block;
@@ -183,12 +187,15 @@ a {
   .navigation-menu ul {
     display: flex;
     flex-direction: row;
-    margin-top: -60px;
+    margin-top: -50px;
     width: 94%;
     margin-right: -10px;
     position: relative;
-    left: 45%;
+    left: 38%;
     height: 10px;
+  }
+  .close {
+    display: none;
   }
   .menu {
     display: none;
