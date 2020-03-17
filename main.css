@@ -30,18 +30,6 @@ a {
   border-radius: 16px;
   background-color: black;
 }
-.iot a:hover {
-  width: 100px;
-}
-
-@keyframes iot {
-  0% {
-    transform: scale(1.2);
-  }
-}
-.iot:hover {
-  animation: none;
-}
 
 .cryptography {
   margin: 5px;
@@ -53,14 +41,6 @@ a {
   line-height: 20px;
   color: white;
 }
-@keyframes cryptography {
-  0% {
-    transform: scale(0.8);
-  }
-}
-.cryptography:hover {
-  animation: none;
-}
 
 .ethical {
   margin: 5px;
@@ -71,7 +51,4 @@ a {
   height: 45vh;
   padding: 10px;
   line-height: 20px;
-}
-.ethical:hover {
-  animation: none;
 }
