@@ -50,3 +50,95 @@ a {
   padding: 10px;
   line-height: 20px;
 }
+
+.motiv {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  align-content: center;
+  width: 80%;
+  margin-top: 50px;
+  text-align: left;
+  width: 100%;
+  line-height: 22px;
+}
+
+.hero-content {
+  background-image: url("images/hero-img.jpeg");
+  height: 500px;
+  width: 100%;
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-content h1 {
+  color: whitesmoke;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 70px 10px 20px 20px;
+}
+.vision-mission {
+  width: 80%;
+  border: 1px solid rgb(179, 139, 9);
+  margin: 20px;
+  border-radius: 5px;
+  padding: 20px;
+}
+.vision-mission ul li {
+  padding: 5px;
+  margin-left: 20px;
+}
+.head-span {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(150, 99, 5, 0.938);
+  position: relative;
+  left: 35%;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  height: 60px;
+  border-bottom: solid 0.5px #cecece;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 60px;
+  height: 50px;
+}
+.menu {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  float: right;
+}
+.navigation-menu {
+  margin-top: 60px;
+  /* width: 100%; */
+  background-color: white;
+  /* position: relative; */
+  line-height: 30px;
+  display: none;
+  box-shadow: black;
+  padding: 10px;
+}
+.navigation-menu ul {
+  list-style: none;
+}
+.navigation-menu ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover .navigation-menu {
+  display: block;
+}
