@@ -36,6 +36,7 @@ html {
 }
 .integreting a:hover {
   background-color: rgba(22, 21, 21, 0.8);
+  font-weight: bold;
 }
 
 .cryptography {
@@ -65,21 +66,27 @@ html {
 }
 
 .hero-content {
-  background-image: url("images/hero-img-2.jpg");
+  background-image: linear-gradient(rgba(2, 7, 8, 0.3), rgba(12, 32, 38, 0.4)),
+    url("images/hero-img-2.jpg");
   height: 500px;
   width: 100%;
   object-fit: contain;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  text-align: center;
+  padding: 130px 10px 20px 20px;
 }
 .hero-content h1 {
   color: whitesmoke;
   letter-spacing: 2px;
   text-align: center;
-  padding: 130px 10px 20px 20px;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 800;
+}
+.hero-content img {
+  width: 80px;
+  height: 80px;
 }
 .vision-mission {
   width: 80%;
@@ -88,7 +95,7 @@ html {
   line-height: 25px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
 }
 .vision-mission p {
   display: flex;
@@ -106,6 +113,13 @@ html {
   color: rgb(33, 63, 172);
   margin-bottom: 10px;
   text-align: center;
+}
+.def-list li {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.def-list {
+  margin-left: 15px;
 }
 
 .header {
