@@ -208,10 +208,124 @@ footer {
 .close:hover ~ .navigation-menu {
   display: none;
 }
+
 @media only screen and (min-width: 768px) {
   .navigation-menu {
     display: flex;
     flex-direction: row;
+    justify-self: right;
+    position: relative;
+    left: 40%;
+    top: -11px;
+  }
+
+  @media only screen and (min-width: 800px) {
+    .navigation-menu {
+      position: relative;
+      left: 42%;
+    }
+    li:hover {
+      border-bottom: #cecece solid 2px;
+      transform: scaleY(1.15);
+      transform: scaleX(1.15);
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+  @media only screen and (min-width: 900px) {
+    .navigation-menu {
+      position: relative;
+      left: 49%;
+    }
+    li:hover {
+      border-bottom: #cecece solid 2px;
+      transform: scaleY(1.15);
+      transform: scaleX(1.15);
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .navigation-menu {
+      position: relative;
+      left: 50%;
+    }
+    ul {
+      position: relative;
+      left: -10%;
+    }
+    li:hover {
+      border-bottom: #cecece solid 2px;
+      transform: scaleY(1.15);
+      transform: scaleX(1.15);
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .navigation-menu {
+      position: relative;
+      left: 60%;
+    }
+    s li:hover {
+      border-bottom: #cecece solid 2px;
+      transform: scaleY(1.15);
+      transform: scaleX(1.15);
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .navigation-menu {
+      position: relative;
+      left: 65%;
+    }
+    s li:hover {
+      border-bottom: #cecece solid 2px;
+      transform: scaleY(1.15);
+      transform: scaleX(1.15);
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .navigation-menu {
+      position: relative;
+      left: 70%;
+    }
+    s li:hover {
+      border-bottom: #cecece solid 2px;
+      transform: scaleY(1.15);
+      transform: scaleX(1.15);
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    .navigation-menu {
+      position: relative;
+      left: 75%;
+    }
+    s li:hover {
+      border-bottom: #cecece solid 2px;
+      transform: scaleY(1.15);
+      transform: scaleX(1.15);
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+  @media only screen and (min-width: 1600px) {
+    .navigation-menu {
+      position: relative;
+      left: 80%;
+    }
+    s li:hover {
+      border-bottom: #cecece solid 2px;
+      transform: scaleY(1.15);
+      transform: scaleX(1.15);
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
   }
   .navigation-menu ul a {
     display: inline;
@@ -219,11 +333,11 @@ footer {
   .navigation-menu ul {
     display: flex;
     flex-direction: row;
-    margin-top: -50px;
-    width: 94%;
-    margin-right: -10px;
-    position: relative;
-    left: 65%;
+    margin-top: -40px;
+    /* width: 94%; */
+    /* margin-right: -10px; */
+    position: absolute;
+    right: 0;
     height: 10px;
   }
   .close {
