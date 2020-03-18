@@ -6,52 +6,6 @@
 html {
   font-family: "Lato", sans-serif;
 }
-.comman-class {
-  padding: 10px;
-  border-radius: 8px;
-  margin: 10px 10px;
-  color: white;
-  flex-grow: 2;
-  text-align: center;
-}
-.iot {
-  background: linear-gradient(rgba(2, 7, 8, 0.8), rgba(12, 32, 38, 0.8)),
-    url(images/iot.jpg);
-}
-
-.integreting p {
-  margin: 20px 10px;
-  text-align: left;
-  line-height: 20px;
-  font-weight: bold;
-}
-.integreting a {
-  font-size: 14px;
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  padding: 3px 10px 5px 10px;
-  border-radius: 16px;
-  background-color: black;
-}
-.integreting a:hover {
-  background-color: rgba(22, 21, 21, 0.8);
-}
-
-.cryptography {
-  background: linear-gradient(
-      to left,
-      rgba(2, 7, 8, 0.7),
-      rgba(12, 32, 38, 0.5)
-    ),
-    url(images/crypthography.jpeg);
-}
-
-.ethical {
-  background: linear-gradient(rgba(2, 7, 8, 0.8), rgba(12, 32, 38, 0.6)),
-    url(images/ethical-hacking.jpg);
-}
-
 .motiv {
   display: flex;
   flex-direction: column;
@@ -354,29 +308,144 @@ footer {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .integreting {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-}
 
-@media screen and (min-width: 1024px) {
-  .integreting {
-    justify-content: center;
-    align-items: baseline;
-  }
-  .comman-class {
-    margin: 20px 40px 20px 10px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .integreting {
-    margin: 20px 150px;
-  }
-}
 .button {
   width: 100%;
+}
+.alone {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  height: 380px;
+  background-color: gray;
+  border: 5px solid black;
+  margin: 10px;
+}
+.container p {
+  margin: 20px 40px;
+  text-align: left;
+  line-height: 20px;
+}
+.container a {
+  font-size: 14px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 3px 10px 5px 10px;
+  border-radius: 16px;
+  background-color: black;
+}
+#one {
+  background: linear-gradient(rgba(2, 7, 8, 0.8), rgba(12, 32, 38, 0.8)),
+    url(images/ethical-hacking.jpg);
+  background-size: cover;
+}
+#two {
+  background: linear-gradient(rgba(2, 7, 8, 0.8), rgba(12, 32, 38, 0.8)),
+    url(images/crypthography.jpeg);
+  background-size: cover;
+}
+#three {
+  background: linear-gradient(rgba(2, 7, 8, 0.8), rgba(12, 32, 38, 0.8)),
+    url(images/iot.jpg);
+  background-size: cover;
+}
+.slide_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+#i1,
+#i2,
+#i3 {
+  display: none;
+}
+
+.pre,
+.next {
+  width: 12%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(88, 88, 88, 0.4);
+  z-index: 99;
+  cursor: pointer;
+}
+
+.pre {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+.nav {
+  width: 100%;
+  height: 11px;
+  bottom: 12%;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+}
+
+.dots {
+  top: 20px;
+  width: 18px;
+  height: 100%;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.slide_img {
+  z-index: -1;
+}
+.slide_img h1 {
+  text-align: center;
+  position: absolute;
+  margin-left: 10px;
+  top: 40%;
+  color: white;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three {
+  z-index: 9;
+}
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3 {
+  background: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 300px;
+    height: 380px;
+    left: 30%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    left: 36%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    left: 40%;
+  }
 }
