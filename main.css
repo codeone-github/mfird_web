@@ -15,13 +15,15 @@ html {
   text-align: center;
 }
 .iot {
-  background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
+  background: linear-gradient(rgba(2, 7, 8, 0.8), rgba(12, 32, 38, 0.8)),
+    url(images/iot.jpg);
 }
 
 .integreting p {
   margin: 20px 10px;
   text-align: left;
   line-height: 20px;
+  font-weight: bold;
 }
 .integreting a {
   font-size: 14px;
@@ -37,11 +39,17 @@ html {
 }
 
 .cryptography {
-  background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
+  background: linear-gradient(
+      to left,
+      rgba(2, 7, 8, 0.7),
+      rgba(12, 32, 38, 0.5)
+    ),
+    url(images/crypthography.jpeg);
 }
 
 .ethical {
-  background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
+  background: linear-gradient(rgba(2, 7, 8, 0.8), rgba(12, 32, 38, 0.6)),
+    url(images/ethical-hacking.jpg);
 }
 
 .motiv {
