@@ -63,20 +63,20 @@ html {
   object-fit: contain;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: center;
 }
 .hero-content h1 {
   color: whitesmoke;
   letter-spacing: 2px;
   text-align: center;
   padding: 130px 10px 20px 20px;
+  font-size: 32px;
+  font-weight: 800;
 }
 .vision-mission {
   width: 80%;
-  border: 1px solid rgb(33, 63, 172);
-  box-shadow: 5px 10px #888888;
   margin: 20px;
   border-radius: 5px;
-  padding: 20px;
   line-height: 25px;
   display: flex;
   flex-direction: column;
@@ -123,7 +123,6 @@ html {
   float: right;
 }
 footer {
-  margin-bottom: 50px;
   background: linear-gradient(to right, rgb(40, 140, 173), rgb(33, 63, 172));
   color: white;
   text-align: center;
