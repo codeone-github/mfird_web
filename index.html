@@ -2,117 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="main.css" />
-    <title>MFIRD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="header">
+    <header class="header-part">
       <img class="logo" src="images/logo.png" alt="logo" />
-      <img
-        class="menu"
-        src="https://img.icons8.com/android/48/000000/menu.png"
-      />
-      <div class="navigation-menu">
-        <a href="" class="head-list">About Us</a>
-        <a href="" class="head-list">Privacy Policy</a>
-        <a href="" class="head-list">Contact Us</a>
-        <a href="" class="head-list">Newsletter</a>
-        <img class="close" src="images/close.png" alt="close" />
+      <a class="menu" href="#menu-list">
+        <img src="images/ham.png" />
+      </a>
+      <h2 class="mfird-intro">
+        Milat Foundation for Industry,Research and Development
+      </h2>
+      <div id="menu-list" class="navigation-menu">
+        <a id="close" href="http://127.0.0.1:5501/"
+          ><img src="images/close.png"
+        /></a>
+        <a href="" class="menu-list">Home</a>
+        <a href="" class="menu-list">MFIRD</a>
+        <a href="" class="menu-list">About</a>
+        <a href="" class="menu-list">Stay Tuned</a>
+        <a href="" class="menu-list">Workshops</a>
+        <a href="" class="menu-list">Demo</a>
       </div>
-    </div>
-
-    <section class="hero-content">
-      <h1>Millat Foundation for Industry, Research and Development</h1>
+    </header>
+    <section class="our-technology">
+      <h1 class="ot">our technology</h1>
+      <div class="our-tech-images">
+        <div class="up">
+          <img id="iot-pic" src="images/Iot.jpg" alt="Iot" />
+        </div>
+        <div class="middle">
+          <img id="react-pic" src="images/react-native.jpg" alt="react" />
+          <img id="ios-pic" src="images/ios.jpg" alt="ios" />
+          <img class="android-pic" src="images/android.jpeg" alt="android" />
+        </div>
+        <div class="cyber">
+          <img
+            class="cyber-sec"
+            src="images/cybersec.jpg"
+            alt="CyberSecurity"
+          />
+          <h2 id="CS">cyber security</h2>
+        </div>
+        <div class="down">
+          <img src="images/nodejspic.png" alt="js" id="js-pic" />
+          <img src="images/python.jpg" alt="python" id="python-pic" />
+        </div>
+      </div>
     </section>
-    <div class="motiv">
-      <div class="vision-mission">
-        <span class="head-span">MFIRD</span><br />
-        <p>
-          Millat foundation for Industries' research and Development is an
-          associate of MFERD, which is a non-profit organization for
-          khidmat-e-khalq (Services to the creation) MFIRD is an endeavour to
-          update and upgrade all sections of the Ummah with the latest
-          developments in various industries/technologies. <br />
-
-          It's our responsibility to keep abreast with the constant changes and
-          advancements in our respective fields and disseminate this knowledge
-          to others. With this belief and the sole purpose of pleasing Allah
-          swt, MFIRD undertakes various initiatives such as <br />
-          1. Conferences on latest industry trends <br />
-
-          2. Career guidance and counseling for the working professionals <br />
-
-          3. Job orientation for freshers <br />
-
-          4. Internships and projects for students <br />
-
-          Alhamdulillah, these initiatives have benefitted the Ummah in various
-          colleges, startups, individuals. <br />
-          Continuous effort with the blessings bestowed upon us and working
-          together is the need of our times. <br />
-          Let's join hands in this journey to bring out the best of this Ummah.
-        </p>
-      </div>
-    </div>
-    <div class="integreting">
-      <div class="iot comman-class">
-        <span>
-          <h3>22-MAR-2020</h3>
-        </span>
-        <p>
-          The <strong>Internet of thing (IoT)</strong> is a system of
-          interrelated computing devices, mechanical and digital machines
-          provided with unique identifiers (UIDs) and the ability to transfer
-          data over a network without requiring human-to-hum or humn-to-computer
-          interaction.
-        </p>
-        <a href="">See more</a>
-      </div>
-      <div class="cryptography comman-class">
-        <span>
-          <h3>25-MAR-2020</h3>
-        </span>
-        <p>
-          <strong>Cryptography</strong> or <strong>cryptology</strong> is the
-          practice and study of techniques for secure communication in the
-          presence of third parties called adversaries. More generally,
-          crytography is about constructing and analyzing protocols that prevent
-          third parties or the public from reading private messages.
-        </p>
-        <a href="">See more</a>
-      </div>
-      <div class="ethical comman-class">
-        <span>
-          <h3>28-MAR-2020</h3>
-        </span>
-        <p>
-          <strong>Certified Ethical Hacker (CEH)</strong> is a qualification
-          obtained by demonstrating knowledge of assessing the security of
-          computer systems by looking for weaknesses and vulnerabilities in
-          target systems, using the same knowledge and tools as a malicious
-          hacker.
-        </p>
-        <a href="">See more</a>
-      </div>
-    </div>
-    <footer>
-      <div class="contact">
-        <section>
-          <img src="/images/icon-phone.svg" alt="" />
-          <span>Phone: +1-543-123-4567</span> <br />
-        </section>
-        <section>
-          <img src="/images/icon-email.svg" alt="" />
-          <span>example@company.com</span>
-        </section>
-        <p>&copy; All Copyrights Reserved</p>
-      </div>
-    </footer>
   </body>
 </html>
