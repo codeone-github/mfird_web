@@ -2,156 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <title>MFIRD</title>
   </head>
   <body>
-    <div class="header">
+    <header class="header-part">
       <img class="logo" src="images/logo.png" alt="logo" />
-      <img
-        class="menu"
-        src="https://img.icons8.com/android/48/000000/menu.png"
-      />
-
-      <div id="navv" class="navigation-menu">
-        <ul>
-          <a href="" class="head-list"><li>About Us</li></a>
-          <a href="" class="head-list"> <li>Privacy Policy</li></a>
-          <a href="" class="head-list"> <li>Contact Us</li> </a>
-          <a href="" class="head-list"> <li>Newsletter</li> </a>
+      <a class="menu" href="#menu-list">
+        <img src="images/ham.png" />
+      </a>
+      <h2 class="mfird-intro">
+        Milat Foundation for Industry,Research and Development
+      </h2>
+      <div id="menu-list" class="navigation-menu">
+        <a id="close" href="" onclick="history.back()"
+          ><img src="images/close.png"
+        /></a>
+        <a href="" class="menu-list">Home</a>
+        <a href="" class="menu-list">MFIRD</a>
+        <a href="" class="menu-list">About</a>
+        <a href="" class="menu-list">Stay Tuned</a>
+        <a href="" class="menu-list">Workshops</a>
+        <a href="" class="menu-list">Demo</a>
+      </div>
+    </header>
+    <section class="our-technology">
+      <h1 class="ot">our technology</h1>
+      <div class="our-tech-images">
+        <div class="desk">
+          <h2 id="IoT">IoT</h2>
+          <div class="up">
+            <img id="iot-pic" src="images/Iot.jpg" alt="Iot" />
+          </div>
+          <div class="middle">
+            <img id="react-pic" src="images/react-native.jpg" alt="react" />
+            <img id="ios-pic" src="images/ios.jpg" alt="ios" />
+            <img class="android-pic" src="images/android.jpeg" alt="android" />
+          </div>
+        </div>
+        <div class="cyber">
           <img
-            class="close"
-            src="https://img.icons8.com/carbon-copy/100/000000/close-window.png"
+            class="cyber-img"
+            class="cyber-sec"
+            src="images/cybersec.jpg"
+            alt="CyberSecurity"
           />
-        </ul>
+          <h2 id="CS">cyber security</h2>
+        </div>
+        <div class="down">
+          <img src="images/nodejspic.png" alt="js" id="js-pic" />
+          <img src="images/python.jpg" alt="python" id="python-pic" />
+        </div>
       </div>
-    </div>
-
-    <section class="hero-content">
-      <img src="images/logo.png" alt="" />
-      <h1>Millat Foundation for Industry, Research and Development</h1>
     </section>
-    <div class="merged">
-    <div class="motiv">
-      <div class="vision-mission">
-        <span class="head-span">MFIRD</span><br />
-        <p>
-          Millat foundation for Industries' research and Development is an
-          associate of MFERD, which is a non-profit organization for
-          khidmat-e-khalq (Services to the creation) MFIRD is an endeavour to
-          update and upgrade all sections of the Ummah with the latest
-          developments in various industries/technologies. <br />
-
-          It's our responsibility to keep abreast with the constant changes and
-          advancements in our respective fields and disseminate this knowledge
-          to others. With this belief and the sole purpose of pleasing Allah
-          swt, MFIRD undertakes various initiatives such as 
-          <ol class="def-list">
-            <li>Conferences on latest industry trends</li>
-            <li>Career guidance and counseling for the working professionals</li>
-            <li>Job orientation for freshers</li>
-            <li>Internships and projects for students</li>
-          </ol>
-          Alhamdulillah, these initiatives have benefitted the Ummah in various
-          colleges, startups, individuals. <br />
-          Continuous effort with the blessings bestowed upon us and working
-          together is the need of our times. <br />
-          Let's join hands in this journey to bring out the best of this Ummah.
-        </p>
-      </div>
-    </div>
-    <div class="head-container">
-      <h1 class="alone">Workshops</h1>
-      <div class="container">
-        <input type="radio" name="images" id="i1" checked />
-        <input type="radio" name="images" id="i2" />
-        <input type="radio" name="images" id="i3" />
-
-        <div class="slide_img" id="one">
-          <span>
-            <h3>22-MAR-2020</h3>
-          </span>
-          <p>
-            <strong>Certified Ethical Hacker (CEH)</strong> is a qualification
-            obtained by demonstrating knowledge of assessing the security of
-            computer systems by looking for weaknesses and vulnerabilities in
-            target systems, using the same knowledge and tools as a malicious
-            hacker.
-          </p>
-          <a href="">See more</a>
-          <label for="i3" class="pre"> <h1></h1></label>
-          <label for="i2" class="next"><h1>></h1></label>
-        </div>
-        <div class="slide_img" id="two">
-          <span>
-            <h3>25-MAR-2020</h3>
-          </span>
-          <p>
-            <strong>Cryptography</strong> or <strong>cryptology</strong> is the
-            practice and study of techniques for secure communication in the
-            presence of third parties called adversaries. More generally,
-            crytography is about constructing and analyzing protocols that
-            prevent third parties.
-          </p>
-          <a href="">See more</a>
-          <label for="i1" class="pre"><h1><</h1></label>
-          <label for="i3" class="next"><h1>></h1></label>
-        </div>
-        <div class="slide_img" id="three">
-          <span>
-            <h3>28-MAR-2020</h3>
-          </span>
-          <section>
-          <p>
-            The <strong>Internet of thing (IoT)</strong> is a system of
-            interrelated computing devices, mechanical and digital machines
-            provided with unique identifiers (UIDs) and the ability to transfer
-            data over a network without requiring human-to-hum or
-            humn-to-computer interaction.
-          </p>
-          <a href="">See more</a>
-          </section>
-          <label for="i2" class="pre"><h1><</h1></label>
-          <label for="i1" class="next"></label>
-        </div>
-        <div class="nav">
-          <label for="i1" class="dots" id="dot1"></label>
-          <label for="i2" class="dots" id="dot2"></label>
-          <label for="i3" class="dots" id="dot3"></label>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="stay-tuned">
-      <h2>Stay Tuned</h2>
-      <form action="" id="stayTuned">
-        <input type="text", placeholder="Fname" class="form-content">
-        <input type="text", placeholder="Lname" class="form-content">
-        <input type="number", placeholder="Phone Number" class="form-content">
-        <input type="email" name="" id="" placeholder="Email" class="form-content">
-        
-        <button type="submit" class="form-content" value="submit" >Submit</button>
-      </form>
-    </div>
-    <footer>
-      <div class="contact">
-        <section>
-          <img src="/images/icon-phone.svg" alt="" />
-          <span>Phone: +1-543-123-4567</span> <br />
-        </section>
-        <section>
-          <img src="/images/icon-email.svg" alt="" />
-          <span>example@company.com</span>
-        </section>
-        <p>&copy; All Copyrights Reserved</p>
-      </div>
-    </footer>
-    <script src="script.js"></script>
   </body>
 </html>
