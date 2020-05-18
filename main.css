@@ -72,6 +72,7 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .construct h1 {
+  background: linear-gradient(rgba(172, 189, 211, 0.2), rgb(235, 243, 252, 0));
   font-family: "Yellowtail", cursive;
   color: white;
   letter-spacing: 5px;
@@ -90,17 +91,18 @@
 }
 
 .did-you {
+  min-height: 180px;
   background-color: white;
   margin-top: 20px;
   display: grid;
   grid-template-columns: 4fr 1fr;
+  align-items: center;
 }
 .did {
   padding: 40px 20px;
 }
 .did-h {
-  text-align: center;
-  margin: -50px 0px 10px 30px;
+  margin: -70px 0px 10px 0px;
 }
 .did h5 {
   display: inline-block;
@@ -114,7 +116,20 @@
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+}
+.did-you-icons a {
+  margin-bottom: 20px;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: rgb(118, 44, 172);
+  color: white;
 }
 /* Construct today end */
 
@@ -130,6 +145,7 @@
   }
   .construct h1 {
     width: 70%;
+    background: none;
   }
   .did-you-know {
     display: flex;
