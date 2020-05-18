@@ -1,5 +1,149 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.top {
+  margin: 5px 5px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+.logo-wrapper img {
+  width: 120px;
+}
+header button img {
+  width: 40px;
+  height: 50px;
+}
+.menu-icon {
+  width: 40px;
+  height: 60px;
+  background: none;
+  border: none;
+  position: relative;
+  top: 30px;
+  transform: rotate(-90deg);
+  transition-duration: 2s;
+}
+.menu-icon-new {
+  width: 40px;
+  height: 60px;
+  background: none;
+  border: none;
+  position: relative;
+  top: 30px;
+  transform: rotate(90deg);
+  transition-duration: 2s;
+}
+.menu-items {
+  text-decoration: none;
+  color: #142850;
+  border: solid 1px black;
+  border-radius: 2px;
+  padding: 2px;
+  font-size: small;
+  margin-bottom: 5px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  right: -400px;
+  transition: 1s ease;
+}
+.menu-new {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  right: 0px;
+  transition: 2s ease;
+}
+.quotation-section {
+  padding-top: 40px;
+  background-color: #142850;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.institution-name {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.institution-name h2 {
+  color: #354463;
+  width: 55%;
+  text-align: left;
+}
+.decoration {
+  width: 140px;
+  height: 30px;
+  background-color: #354463;
+  position: absolute;
+  left: 50px;
+  top: 175px;
+}
+.quote {
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  width: 70%;
+  font-size: x-large;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.quote span {
+  display: block;
+  position: relative;
+  left: 100px;
+  font-size: small;
+  letter-spacing: 2px;
+  padding-top: 10px;
+}
+.take-action-head {
+  padding: 5px;
+  background-color: #354463;
+}
+.take-action-head p {
+  font-family: "Balsamiq Sans", cursive;
+  font-family: "Jost", sans-serif;
+  font: 10px;
+  color: white;
+  text-transform: uppercase;
+}
+.take-action-section {
+  font-family: "Balsamiq Sans", cursive;
+  background-color: #354463;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.take-action-items {
+  width: 80%;
+}
+.take-action-items p {
+  color: white;
+  text-transform: capitalize;
+  font-size: large;
+  margin-top: 30px;
+  text-align: left;
+  word-spacing: 4px;
+  letter-spacing: 2px;
+}
+.take-action-items p span {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
