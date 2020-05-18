@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* card start */
+.society {
+  background-color: rgb(20, 40, 80);
+  padding: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.society-header {
+  min-width: 300px;
+  margin: 20px 10px;
+}
+
+.what-we-do {
+  background-color: white;
+  text-decoration: none;
+  padding: 8px;
+}
+.society h1 {
+  color: white;
+  margin: 30px 0px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.card1 {
+  background-color: white;
+  min-width: 300px;
+  min-height: 400px;
+  margin: 20px 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card1 img {
+  width: 100%;
+}
+.card1 h3 {
+  margin: 10px 20px;
+}
+.read {
+  padding: 20px;
+}
+.read a {
+  background-color: rgb(118, 44, 172);
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  color: white;
+  margin-top: 20px;
+  border-radius: 30px;
+  width: 120px;
+  text-align: center;
+}
+/* card-end */
+
+/* Construct today */
+.secure-future {
+  background: url(images/did-you-know-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.construct h1 {
+  font-family: "Yellowtail", cursive;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+.construct a {
+  background-color: rgb(118, 44, 172);
+  color: white;
+  width: 120px;
+  padding: 8px;
+  display: inline-block;
+  margin: 20px 0px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.did-you {
+  background-color: white;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.did {
+  padding: 40px 20px;
+}
+.did-h {
+  text-align: center;
+  margin: -50px 0px 10px 30px;
+}
+.did h5 {
+  display: inline-block;
+  background-color: rgb(53, 68, 99);
+  color: white;
+  padding: 4px;
+  text-align: center;
+}
+.did-you-icons {
+  color: rgb(118, 44, 172);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+/* Construct today end */
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  .secure-future {
+    padding: 40px;
+  }
+  .construct h1 {
+    width: 70%;
+  }
+  .did-you-know {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .did-you {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .society {
+    padding: 10px 20px;
+  }
+  .construct {
+    margin-left: 20px;
+  }
+  .construct h1 {
+    width: 60%;
+  }
+  .secure-future {
+    padding: 80px;
+  }
+  .did-you {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .secure-future {
+    padding: 60px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .construct {
+    margin-top: 30px;
+  }
+  .construct h1 {
+    width: 100%;
+    font-size: 50px;
+  }
+  .card1 {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .society {
+    padding: 20px 100px;
+  }
+  .card {
+    column-gap: 20px;
+  }
+
+  .card1 {
+    width: 260px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  .secure-future {
+    justify-content: space-around;
+  }
+  .construct h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .society {
+    padding-left: 140px;
+    height: 100vh;
+  }
+  .secure-future {
+    padding: 50px 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .construct h1 {
+    width: 70%;
+  }
+}
