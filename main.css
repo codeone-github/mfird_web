@@ -6,6 +6,8 @@
 body {
   /* font-family: flood-std, sans-serif; */
 }
+
+/* Events and Latest news  */
 .events-and-news {
   background: #142850 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -46,6 +48,8 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   line-height: 25px;
 }
+
+/* Read more button  */
 .read-more {
   background-color: #762cac;
   color: white;
@@ -53,6 +57,8 @@ body {
   border-radius: 20px;
   border: none;
 }
+
+/* Subscription section styling */
 .subscription {
   padding: 10%;
   text-align: center;
@@ -72,6 +78,8 @@ body {
   border: 1px solid #ddd;
   border-radius: 20px;
 }
+
+/* Footer  */
 footer {
   background-color: #762cac;
   color: white;
@@ -110,6 +118,8 @@ footer h2 {
   display: flex;
   flex-direction: row;
 }
+
+/* Desktop version */
 @media screen and (min-width: 1024px) {
   .events-and-news {
     padding: 5% 10%;
