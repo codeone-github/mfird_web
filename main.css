@@ -103,7 +103,7 @@
   padding: 40px 20px;
 }
 .did-h {
-  margin: -70px 0px 10px 0px;
+  margin: -95px 0px 10px 0px;
 }
 .did h5 {
   display: inline-block;
@@ -348,6 +348,9 @@
   .card1 {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+  }
+  .did-h {
+    margin-top: -85px;
   }
 
   .flex-box img {
