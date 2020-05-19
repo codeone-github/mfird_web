@@ -138,6 +138,8 @@
   padding: 10px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .stories {
   background-color: rgb(20, 40, 80);
@@ -166,6 +168,7 @@
 }
 .stories h2 {
   font-size: 16px;
+  margin-top: 10px;
 }
 
 /* Slideshow container */
