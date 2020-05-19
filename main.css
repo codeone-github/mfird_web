@@ -39,6 +39,8 @@
 .en-description p {
   text-align: justify;
   margin: 16px 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .read-more {
   background-color: #762cac;
@@ -57,15 +59,21 @@
 }
 .subscription form {
   margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 .subscription form input {
   padding: 10px;
-  border: none;
+  border: 1px solid #ddd;
+  border-radius: 10px;
 }
 footer {
   background-color: #762cac;
   color: white;
   padding: 10%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 footer h3 {
   font-size: 20px;
