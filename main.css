@@ -97,3 +97,13 @@ footer h2 {
   font-family: flood-std, sans-serif;
   font-style: normal;
 }
+.millat-heading img {
+  width: 90px;
+  height: 90px;
+  margin-right: 32px;
+}
+.millat-heading {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+}
