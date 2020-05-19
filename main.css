@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: flood-std, sans-serif;
+  /* font-family: flood-std, sans-serif; */
 }
 .events-and-news {
   background: #142850 0% 0% no-repeat padding-box;
@@ -41,9 +41,10 @@ body {
 }
 .en-description p {
   text-align: justify;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 25px;
 }
 .read-more {
   background-color: #762cac;
@@ -108,4 +109,73 @@ footer h2 {
   margin-bottom: 32px;
   display: flex;
   flex-direction: row;
+}
+@media screen and (min-width: 1024px) {
+  .events-and-news {
+    padding: 5% 10%;
+  }
+  .events-and-news h1 {
+    width: 60%;
+  }
+  .events {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 64px 0;
+  }
+  .events img {
+    margin: 0;
+    width: 40%;
+    height: auto;
+  }
+  .events-desktop {
+    width: 40%;
+  }
+  .news {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 64px 0;
+  }
+  .news img {
+    width: 40%;
+    height: auto;
+    margin: 0;
+  }
+  .news-desktop {
+    width: 40%;
+  }
+  .subscription {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 10%;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .subscription h2 {
+    width: 50%;
+    text-align: justify;
+  }
+  .subscription form {
+    margin: 0px;
+    justify-content: flex-end;
+    width: 50%;
+  }
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5% 10%;
+  }
+  .interaction {
+    width: 30%;
+  }
+  .interaction p {
+    font-size: 13px;
+  }
+  .interaction ul li {
+    font-size: 13px;
+  }
+  .millat-heading img {
+    margin-right: 16px;
+  }
 }
