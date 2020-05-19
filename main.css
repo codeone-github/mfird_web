@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: flood-std, sans-serif;
+}
 .events-and-news {
   background: #142850 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -66,7 +69,7 @@
 .subscription form input {
   padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 footer {
   background-color: #762cac;
@@ -75,10 +78,10 @@ footer {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-footer h3 {
+.millat-heading h3 {
   font-size: 20px;
   margin-bottom: 32px;
-  text-align: center;
+  text-align: left;
 }
 .list {
   list-style: none;
