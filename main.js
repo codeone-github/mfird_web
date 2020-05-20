@@ -1,3 +1,5 @@
+
+// script for carousal
 var slideIndex = 1;
 showSlides(slideIndex);
 

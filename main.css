@@ -7,19 +7,19 @@
 /* card start */
 .society {
   background-color: rgb(20, 40, 80);
-  padding: 10px;
+  padding: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .society-header {
-  min-width: 300px;
-  margin: 20px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
 .what-we-do {
   background-color: white;
   text-decoration: none;
   padding: 8px;
+  display: inline-block;
 }
 .society h1 {
   color: white;
@@ -29,11 +29,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
 }
 .card1 {
   background-color: white;
-  min-width: 300px;
+  min-width: 200px;
   min-height: 400px;
   margin: 20px 0px;
   border-top-left-radius: 5px;
@@ -51,7 +50,7 @@
 .read a {
   background-color: rgb(118, 44, 172);
   text-decoration: none;
-  padding: 10px;
+  padding: 8px;
   display: inline-block;
   color: white;
   margin-top: 20px;
@@ -61,16 +60,20 @@
 }
 /* card-end */
 
-/* Construct today */
+/* stories start */
 .secure-future {
   background: url(images/did-you-know-background-min.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.secure-future-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .construct h1 {
   background: linear-gradient(rgba(172, 189, 211, 0.2), rgb(235, 243, 252, 0));
@@ -90,7 +93,18 @@
   text-decoration: none;
   border-radius: 30px;
 }
+.did-h {
+  position: relative;
+  top: -55px;
+}
 
+.did-h h5 {
+  display: inline-block;
+  background-color: rgb(53, 68, 99);
+  color: white;
+  padding: 4px;
+  text-align: center;
+}
 .did-you {
   min-height: 180px;
   background-color: white;
@@ -101,20 +115,6 @@
 }
 .did {
   padding: 40px 20px;
-}
-.did-h {
-  position: relative;
-  top: -63px;
-}
-.did-hp {
-  margin-top: -35px;
-}
-.did h5 {
-  display: inline-block;
-  background-color: rgb(53, 68, 99);
-  color: white;
-  padding: 4px;
-  text-align: center;
 }
 .did-you-icons {
   color: rgb(118, 44, 172);
@@ -136,7 +136,7 @@
   background-color: rgb(118, 44, 172);
   color: white;
 }
-/* Carousal*/
+/* stories end */
 
 .carousal {
   padding: 10px;
@@ -154,7 +154,7 @@
 .stories a {
   background-color: rgb(118, 44, 172);
   text-decoration: none;
-  padding: 10px;
+  padding: 8px;
   display: block;
   color: white;
   margin: 10px 0px;
@@ -258,17 +258,23 @@
     opacity: 1;
   }
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .card {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+  .carousal {
+    padding: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
     column-gap: 20px;
   }
 
-  .secure-future {
-    padding: 40px;
-  }
   .construct h1 {
     width: 70%;
     background: none;
@@ -276,15 +282,18 @@
   .did-you-know {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     flex-direction: row;
   }
   .did-you {
     width: 320px;
+    margin-right: 20px;
   }
+
   .stories {
-    margin-left: 0px;
-    margin-right: 0px;
+    padding: 20px 40px;
+    height: 280px;
+    margin: 10px -40px 0px 0px;
+    z-index: 1;
   }
   .carousal {
     margin-top: 30px;
@@ -299,22 +308,12 @@
     height: 100%;
     height: 340px;
   }
-  .stories {
-    padding: 20px 40px;
-    height: 280px;
-    margin: 10px -40px 0px 0px;
-    z-index: 1;
-  }
   .prev,
   .next {
-    top: 50%;
-  }
-  .stories p {
-    margin-top: -75px;
-    position: absolute;
-    left: 44%;
+    top: 40%;
   }
 }
+
 @media screen and (min-width: 992px) {
   .card {
     grid-template-columns: 1fr 1fr 1fr;
@@ -322,41 +321,33 @@
   .society {
     padding: 10px 20px;
   }
-  .construct {
-    margin-left: 20px;
-  }
+
   .construct h1 {
     width: 60%;
   }
-  .secure-future {
-    padding: 80px;
-  }
+
   .did-you {
     width: 360px;
   }
 }
-
 @media screen and (min-width: 1024px) {
-  .secure-future {
-    padding: 60px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .construct {
-    margin-top: 30px;
-  }
-  .construct h1 {
-    width: 100%;
-    font-size: 50px;
-  }
   .card1 {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
-
-  .flex-box img {
-    height: 100%;
+  .secure-future-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+
+  .construct {
+    margin-top: 30px;
+  }
+  .construct h1 {
+    width: 60%;
+    font-size: 50px;
+  }
+
   .dots {
     position: absolute;
     left: 3%;
@@ -368,14 +359,12 @@
     margin: 10px -40px 0px 0px;
     z-index: 1;
   }
-
-  .stories p {
-    margin-top: -117px;
-    left: 52%;
-  }
   .stories-img {
     width: 50%;
     height: 350px;
+  }
+  .stories p {
+    margin-top: -60px;
   }
   .prev,
   .next {
@@ -394,72 +383,39 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .society {
-    padding: 20px 40px 20px 0px;
-  }
-  .society-header {
-    margin-left: 50px;
-  }
-  .society > div {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .card {
-    column-gap: 0px;
-
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .card1 {
-    width: 260px;
-    margin: 0px 0px;
-    margin-left: auto;
-    margin-right: auto;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
   }
-  .secure-future {
-    justify-content: space-around;
-  }
+
   .construct h1 {
+    width: 65%;
     font-size: 60px;
   }
   .dots {
     left: 10%;
   }
   .prev {
+    top: 40%;
     margin-left: -30px;
     font-size: 30px;
   }
   .next {
+    top: 40%;
     margin-right: -30px;
     font-size: 30px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .society {
-    height: 100vh;
-    padding-left: 25px;
+  .construct h1 {
+    width: 60%;
   }
-  .society-header {
-    margin-left: 55px;
-  }
-  .card {
+  .did-you {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .secure-future {
-    padding: 50px 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .construct h1 {
-    width: 70%;
-  }
   .dots {
     left: 18%;
   }
