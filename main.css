@@ -20,25 +20,93 @@ header button img {
   height: 50px;
 }
 .menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
   width: 40px;
   height: 60px;
   background: none;
   border: none;
   position: relative;
   top: 30px;
-  transform: rotate(-90deg);
-  transition-duration: 2s;
+  right: 20px;
+  outline: none;
+  border-radius: 15px;
+  transform: rotate(-180deg);
+  transition-duration: 1s;
+  animation: forwards;
+  animation-delay: 0ms;
+  animation-name: initSize;
+  animation-duration: 1s;
+}
+@keyframes initSize {
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+.menu-icon-focussed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  width: 40px;
+  height: 60px;
+  background: none;
+  border: none;
+  position: relative;
+  top: 30px;
+  right: 20px;
+  transform: rotate(-180deg);
+  transition-duration: 2.5s;
+  outline: none;
+  background-color: gray;
+  border-radius: 15px;
 }
 .menu-icon-new {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   width: 40px;
   height: 60px;
   background: none;
   border: none;
   position: relative;
   top: 30px;
-  transform: rotate(90deg);
-  transition-duration: 2s;
+  right: 20px;
+  transform: rotate(180deg);
+  transition-duration: 1s;
+  outline: none;
+  border-radius: 15px;
+  animation: forwards;
+  animation-delay: 0ms;
+  animation-name: resize;
+  animation-duration: 1s;
 }
+@keyframes resize {
+  100% {
+    transform: scale(0.6);
+  }
+}
+.institution-name-logo {
+  display: none;
+}
+.hamberger {
+  width: fit-content;
+}
+.bars {
+  width: 10px;
+  height: 10px;
+  background-color: #142850;
+  margin-bottom: 4px;
+  border-radius: 5px;
+}
+/* .menu-icon img {
+  outline: none;
+  position: relative;
+  right: 15px;
+} */
 .menu-items {
   text-decoration: none;
   color: #142850;
@@ -48,12 +116,17 @@ header button img {
   font-size: small;
   margin-bottom: 5px;
 }
+.quotation-with-institution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  right: -400px;
+  right: -1000px;
   transition: 1s ease;
 }
 .menu-new {
@@ -62,7 +135,7 @@ header button img {
   justify-content: space-between;
   position: relative;
   right: 0px;
-  transition: 2s ease;
+  transition: 1.5s ease-out;
 }
 .quotation-section {
   padding-top: 40px;
@@ -75,22 +148,25 @@ header button img {
   display: flex;
   justify-content: center;
   background-color: white;
-  width: 80%;
+  width: 70%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .institution-name h2 {
   color: #354463;
-  width: 55%;
+  width: 70%;
   text-align: left;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 .decoration {
   width: 140px;
   height: 30px;
   background-color: #354463;
   position: absolute;
-  left: 50px;
-  top: 175px;
+  left: 70px;
+  top: 180px;
+  z-index: 1;
 }
 .quote {
   font-family: "Indie Flower", cursive;
@@ -102,28 +178,37 @@ header button img {
   font-size: x-large;
   padding-top: 30px;
   padding-bottom: 50px;
+  text-align: left;
 }
 .quote span {
   display: block;
   position: relative;
-  left: 100px;
-  font-size: small;
+  left: 50px;
+  font-size: 14px;
+  height: 55px;
   letter-spacing: 2px;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .take-action-head {
+  width: 150px;
   padding: 5px;
   background-color: #354463;
+  display: flex;
+  justify-content: center;
 }
 .take-action-head p {
   font-family: "Balsamiq Sans", cursive;
   font-family: "Jost", sans-serif;
+
   font: 10px;
   color: white;
   text-transform: uppercase;
 }
 .take-action-section {
-  font-family: "Balsamiq Sans", cursive;
+  /* font-family: "Balsamiq Sans", cursive; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: #354463;
   display: flex;
   flex-direction: column;
@@ -147,3 +232,255 @@ header button img {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
+/* media queries begin --- Ihtisham */
+/*  */
+@media screen and (min-width: 400px) {
+  .decoration {
+    position: absolute;
+    left: 100px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .decoration {
+    position: absolute;
+    left: 160px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+  header {
+    display: flex;
+
+    margin-left: 0px;
+    width: 40vw;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-items {
+    border: none;
+    height: fit-content;
+    font-size: 16px;
+    margin-left: 10px;
+    color: #354463;
+    letter-spacing: 0.5px;
+
+    border-radius: 18px;
+    padding: 10px;
+  }
+  .menu-items:hover {
+    background-color: #354463;
+    color: white;
+  }
+  .menu {
+    display: flex;
+    height: fit-content;
+    justify-content: space-around;
+    position: relative;
+    right: 10px;
+  }
+  .decoration {
+    left: 270px;
+    top: 170px;
+  }
+  .institution-name-logo {
+    display: flex;
+    width: 45%;
+    /* width: 45%; */
+    position: relative;
+    left: -40px;
+    top: 30px;
+    font-weight: bold;
+    color: #354463;
+  }
+  .quotation-with-institution {
+    display: flex;
+    justify-content: center;
+  }
+  .institution-name {
+    width: 50%;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .institution-name h2 {
+    font-size: 40px;
+  }
+  .quotation-section {
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  .decoration {
+    margin-top: -17px;
+    transform: scale(1.5);
+  }
+  .quote {
+    width: 70%;
+    font-size: 40px;
+    padding-top: 80px;
+  }
+  .take-action-head {
+    position: relative;
+    bottom: -50px;
+    transform: scale(1.5);
+  }
+  .take-action-section {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .take-action-section p {
+    letter-spacing: normal;
+    line-height: 25px;
+    font-size: 18px;
+    margin-right: 10px;
+    text-align: left;
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .top {
+    height: 128px;
+  }
+
+  .logo-wrapper img {
+    width: 105px;
+    height: 97px;
+  }
+  .institution-name-logo {
+    width: 292px;
+    height: 63px;
+    position: relative;
+    left: 10px;
+  }
+  .menu {
+    width: 80%;
+    justify-content: space-around;
+  }
+  .institution-name {
+    height: 416px;
+    width: 444px;
+    margin-right: 90px;
+  }
+  .institution-name h2 {
+    font-size: 55px;
+    width: 80%;
+    margin-left: 30px;
+  }
+  .quotation-with-institution {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    justify-content: space-between;
+  }
+  .quote {
+    width: 450px;
+    font-size: 42px;
+    line-height: 75px;
+    margin: 0px;  
+  }
+  .quote span {
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+    height: 50px;
+    padding: 0px;
+  }
+  .decoration {
+    width: 160px;
+    height: 40px;
+    margin-top: 35px;
+    left: 150px;
+  }
+  .take-action-section {
+    height: 240px;
+  }
+  .take-action-section p {
+    font-size: 16px;
+    padding-top: 0px;
+  }
+  .take-action-section p span {
+    font-size: 28px;
+    margin-bottom: 50px;
+    height: 30px;
+
+    padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .decoration {
+    left: 250px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .decoration {
+    left: 290px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .institution-name-logo {
+    font-size: 22px;
+    top: 10px;
+    left: -35px;
+    height: fit-content;
+  }
+  .logo-wrapper img {
+    margin-left: 20px;
+  }
+  .institution-name {
+    margin-left: 100px;
+    position: relative;
+    top: 128px;
+    height: 516px;
+    width: 544px;
+    margin-right: 60px;
+  }
+  .quotation-with-institution {
+    overflow: hidden;
+    margin-bottom: 60px;
+  }
+  .institution-name h2 {
+    padding: 20px;
+    margin: 0px 0px;
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .quote {
+    overflow: hidden;
+    width: 500px;
+    text-align: left;
+    height: 400px;
+    position: relative;
+    top: 50px;
+    left: 40px;
+    transform: scale(1.2);
+  }
+  .decoration {
+    position: absolute;
+    left: 300px;
+    top: 300px;
+  }
+  .quote nav {
+    overflow: hidden;
+  }
+  .take-action-items {
+    width: 232px;
+  }
+  .take-action-items p {
+    letter-spacing: 1.5px;
+  }
+}
+
