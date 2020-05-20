@@ -117,6 +117,7 @@ footer h2 {
   width: 100px;
   height: 100px;
   margin-right: 32px;
+  margin-bottom: 0px;
 }
 .millat-heading {
   margin-bottom: 32px;
@@ -209,5 +210,14 @@ footer h2 {
   }
   .news img {
     max-width: 400px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .millat-heading {
+    display: flex;
+    flex-direction: column;
+  }
+  .millat-heading img {
+    margin-bottom: 16px;
   }
 }
