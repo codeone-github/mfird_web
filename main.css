@@ -51,8 +51,13 @@
   background-color: #762cac;
   color: white;
   padding: 10px;
-  border-radius: 20px;
   border: none;
+  text-decoration: none;
+  border-radius: 30px;
+  width: 120px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* Subscription section styling */
@@ -67,13 +72,15 @@
 .subscription form {
   margin-top: 32px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 .subscription form input {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 20px;
+  margin-bottom: 16px;
+  width: 80%;
 }
 
 /* Footer  */
@@ -96,6 +103,7 @@ footer {
 }
 .interaction span {
   font-size: 18px;
+  font-weight: 600;
 }
 .interaction hr {
   margin: 10px 0;
@@ -106,8 +114,8 @@ footer h2 {
   font-style: normal;
 }
 .millat-heading img {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   margin-right: 32px;
 }
 .millat-heading {
@@ -116,7 +124,7 @@ footer h2 {
   flex-direction: row;
 }
 
-/* Desktop version */
+/* Desktop version and tablet version */
 @media screen and (min-width: 1024px) {
   .events-and-news {
     padding: 5% 10%;
@@ -164,9 +172,15 @@ footer h2 {
     text-align: justify;
   }
   .subscription form {
+    display: flex;
+    flex-direction: row;
     margin: 0px;
     justify-content: flex-end;
     width: 50%;
+  }
+  .subscription form input {
+    margin-right: 16px;
+    margin-bottom: 0px;
   }
   footer {
     display: flex;
@@ -178,449 +192,22 @@ footer h2 {
   }
   .interaction p {
     font-size: 13px;
+    line-height: 20px;
+    max-width: 119px;
   }
   .interaction ul li {
     font-size: 13px;
+    margin-bottom: 5px;
   }
   .millat-heading img {
     margin-right: 16px;
   }
 }
-
-/* card start */
-.society {
-  background-color: rgb(20, 40, 80);
-  padding: 10px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-.society-header {
-  min-width: 300px;
-  margin: 20px 10px;
-}
-
-.what-we-do {
-  background-color: white;
-  text-decoration: none;
-  padding: 8px;
-}
-.society h1 {
-  color: white;
-  margin: 30px 0px;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-.card1 {
-  background-color: white;
-  min-width: 300px;
-  min-height: 400px;
-  margin: 20px 0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-.card1 img {
-  width: 100%;
-}
-.card1 h3 {
-  margin: 10px 20px;
-}
-.read {
-  padding: 20px;
-}
-.read a {
-  background-color: rgb(118, 44, 172);
-  text-decoration: none;
-  padding: 10px;
-  display: inline-block;
-  color: white;
-  margin-top: 20px;
-  border-radius: 30px;
-  width: 120px;
-  text-align: center;
-}
-/* card-end */
-
-/* Construct today */
-.secure-future {
-  background: url(images/did-you-know-background.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  padding: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-.construct h1 {
-  background: linear-gradient(rgba(172, 189, 211, 0.2), rgb(235, 243, 252, 0));
-  font-family: flood-std, sans-serif;
-  color: white;
-  letter-spacing: 5px;
-  font-size: 40px;
-}
-.construct a {
-  background-color: rgb(118, 44, 172);
-  color: white;
-  width: 120px;
-  padding: 8px;
-  display: inline-block;
-  margin: 20px 0px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 30px;
-}
-
-.did-you {
-  min-height: 180px;
-  background-color: white;
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  align-items: center;
-}
-.did {
-  padding: 40px 20px;
-}
-.did-h {
-  margin: -95px 0px 10px 0px;
-}
-.did h5 {
-  display: inline-block;
-  background-color: rgb(53, 68, 99);
-  color: white;
-  padding: 4px;
-  text-align: center;
-}
-.did-you-icons {
-  color: rgb(118, 44, 172);
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-}
-.did-you-icons a {
-  margin-bottom: 20px;
-  width: 30px;
-  height: 30px;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  background-color: rgb(118, 44, 172);
-  color: white;
-}
-/* Carousal*/
-
-.carousal {
-  padding: 10px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.stories {
-  background-color: rgb(20, 40, 80);
-  color: white;
-  padding: 20px;
-  margin: 30px 20px 0px 20px;
-}
-.stories a {
-  background-color: rgb(118, 44, 172);
-  text-decoration: none;
-  padding: 10px;
-  display: block;
-  color: white;
-  margin: 10px 0px;
-  border-radius: 30px;
-  width: 120px;
-  text-align: center;
-}
-.stories p {
-  background-color: rgb(53, 68, 99);
-  color: white;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin-top: -30px;
-}
-.stories h2 {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 70%;
-  width: auto;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  z-index: 1;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #1d1212;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
+@media screen and (min-width: 700px) {
+  .events img {
+    max-width: 400px;
   }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-  }
-
-  .secure-future {
-    padding: 40px;
-  }
-  .construct h1 {
-    width: 70%;
-    background: none;
-  }
-  .did-you-know {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: row;
-  }
-  .did-you {
-    width: 320px;
-  }
-  .stories {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .carousal {
-    margin-top: 30px;
-    padding: 20px;
-  }
-  .flex-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .flex-box img {
-    height: 100%;
-    height: 340px;
-  }
-  .stories {
-    padding: 20px 40px;
-    height: 280px;
-    margin: 10px -40px 0px 0px;
-    z-index: 1;
-  }
-  .prev,
-  .next {
-    top: 50%;
-  }
-  .stories p {
-    margin-top: -80px;
-    position: absolute;
-    left: 45%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .card {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .society {
-    padding: 10px 20px;
-  }
-  .construct {
-    margin-left: 20px;
-  }
-  .construct h1 {
-    width: 60%;
-  }
-  .secure-future {
-    padding: 80px;
-  }
-  .did-you {
-    width: 360px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .secure-future {
-    padding: 60px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .construct {
-    margin-top: 30px;
-  }
-  .construct h1 {
-    width: 100%;
-    font-size: 50px;
-  }
-  .card1 {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-  }
-  .did-h {
-    margin-top: -85px;
-  }
-
-  .flex-box img {
-    height: 100%;
-  }
-  .dots {
-    position: absolute;
-    left: 3%;
-  }
-  .stories {
-    width: 50%;
-    padding: 40px;
-    height: 240px;
-    margin: 10px -40px 0px 0px;
-    z-index: 1;
-  }
-
-  .stories p {
-    margin-top: -120px;
-    left: 50%;
-  }
-  .stories-img {
-    width: 50%;
-    height: 350px;
-  }
-  .prev,
-  .next {
-    color: black;
-    top: 50%;
-    font-size: 25px;
-  }
-  .prev {
-    left: -1%;
-    margin-left: -10px;
-  }
-  .next {
-    right: -1%;
-    margin-right: -10px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .society {
-    padding: 20px 100px;
-  }
-  .card {
-    column-gap: 20px;
-  }
-
-  .card1 {
-    width: 260px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-  }
-  .secure-future {
-    justify-content: space-around;
-  }
-  .construct h1 {
-    font-size: 60px;
-  }
-  .dots {
-    left: 10%;
-  }
-  .prev {
-    margin-left: -30px;
-    font-size: 30px;
-  }
-  .next {
-    margin-right: -30px;
-    font-size: 30px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .society {
-    padding-left: 140px;
-    height: 100vh;
-  }
-  .secure-future {
-    padding: 50px 200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .construct h1 {
-    width: 70%;
-  }
-  .dots {
-    left: 18%;
+  .news img {
+    max-width: 400px;
   }
 }
