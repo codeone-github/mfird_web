@@ -63,7 +63,7 @@
 
 /* Construct today */
 .secure-future {
-  background: url(images/did-you-know-background.png);
+  background: url(images/did-you-know-background-min.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,7 +103,11 @@
   padding: 40px 20px;
 }
 .did-h {
-  margin: -95px 0px 10px 0px;
+  position: relative;
+  top: -63px;
+}
+.did-hp {
+  margin-top: -35px;
 }
 .did h5 {
   display: inline-block;
@@ -164,7 +168,7 @@
   width: 100px;
   text-align: center;
   padding: 5px;
-  margin-top: -30px;
+  margin-top: -37px;
 }
 .stories h2 {
   font-size: 16px;
@@ -306,9 +310,9 @@
     top: 50%;
   }
   .stories p {
-    margin-top: -80px;
+    margin-top: -75px;
     position: absolute;
-    left: 45%;
+    left: 44%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -349,9 +353,6 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
-  .did-h {
-    margin-top: -85px;
-  }
 
   .flex-box img {
     height: 100%;
@@ -369,8 +370,8 @@
   }
 
   .stories p {
-    margin-top: -120px;
-    left: 50%;
+    margin-top: -117px;
+    left: 52%;
   }
   .stories-img {
     width: 50%;
@@ -394,14 +395,28 @@
 
 @media screen and (min-width: 1200px) {
   .society {
-    padding: 20px 100px;
+    padding: 20px 40px 20px 0px;
+  }
+  .society-header {
+    margin-left: 50px;
+  }
+  .society > div {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .card {
-    column-gap: 20px;
+    column-gap: 0px;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .card1 {
     width: 260px;
+    margin: 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
   }
@@ -426,9 +441,17 @@
 
 @media screen and (min-width: 1400px) {
   .society {
-    padding-left: 140px;
     height: 100vh;
+    padding-left: 25px;
   }
+  .society-header {
+    margin-left: 55px;
+  }
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .secure-future {
     padding: 50px 200px;
     display: grid;
