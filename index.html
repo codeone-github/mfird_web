@@ -3,25 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MFIRD</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+     <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Jost&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="//https://use.typekit.net/vbi1w1g.css">
     <link rel="stylesheet" href="https://use.typekit.net/vbi1wlg.css" />
     <link rel="stylesheet" href="https://use.typekit.net/lbl8uoo.css" />
+       <!-- font style -->
+       <link rel="stylesheet" href="https://use.typekit.net/vbi1wlg.css" />
+
+       <!-- icons -->
+       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MFIRD</title>
   </head>
   <body>
-    <!-- font style -->
-    <link rel="stylesheet" href="https://use.typekit.net/vbi1wlg.css" />
+    <!-- Top section with header -->
+    
+    <div class="top">
+      
+      <header>
+        <div class="logo-wrapper"><img src="images/logo.png" alt="logo" /></div>
+        <p class="institution-name-logo">Millat Foundation For Industry,Research & Development</p>
+        <button class="menu-icon" onmousedown="hit();" onkeypress="hit();" onfocus="focus_hit();">
+          <div class="hamberger">
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+        </div>
+          <!-- <img src="images/menu-icon2.png" alt="" /> -->
+          <!-- <svg width="30" height="30"><path d=></svg> -->
+        </button>
+      </header>
+      <div class="menu">
+        <a class="menu-items" href="#move-to-society">About us</a>
+        <a class="menu-items" href="#move-to-did-you">Our Stories</a>
+        <a class="menu-items" href="#move-to-events">News & Events</a>
+        <a class="menu-items" href="#move-to-subscription">Sign in / Sign up</a>
+      </div>
+    </div>
 
-    <!-- icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
+      <div class="quotation-section">
+        <div class="decoration"></div>
+       <div class="quotation-with-institution">
+        <div class="institution-name">
+          <h2>Millat Foundation for Industry, Research & Development</h2>
+        </div>
+        <p class="quote">
+          #be the change you want to see in the world
+          <span>mahatma gandhi</span>
+        </p>
+      </div>
+        <div class="take-action-head"><p>take action</p></div>
+      </div>
+      <div class="take-action-section">
+        <div class="take-action-items">
+          <p>
+            <span>learn</span>
+            improve your skills with our ups killing programmes
+          </p>
+        </div>
+        <div class="take-action-items">
+          <p>
+            <span>volunteer</span>
+            share your experience and knowledge for the benifit of the society
+          </p>
+        </div>
+        <div class="take-action-items">
+          <p>
+            <span>guidance</span>
+            mould your career under the guidance of industry experts
+          </p>
+        </div>
+        <div class="take-action-items">
+          <p>
+            <span>internships</span>
+            grab an opportunity to undergo internships at selected domains
+          </p>
+        </div>
+      </div>
+   <!-- End of top section with header -->
     <!-- cards sections -->
 
-    <section class="society">
+    <section id="move-to-society" class="society">
       <div class="society-header">
         <a href="#" class="what-we-do">WHAT WE DO</a>
         <h1>WE RUN WITH THE MOTTO OF GIVING BACK TO THE SOCIETY.</h1>
@@ -71,7 +142,7 @@
         <a href="#">Take action</a>
       </div>
       <div class="did-you-know">
-        <div class="did-you">
+        <div id="move-to-did-you" class="did-you">
           <div class="did">
             <div class="did-h">
               <h5>DID YOU KNOW ?</h5>
@@ -196,7 +267,7 @@
        <div class="events-and-news">
         <h1>Let's Take action now to save the future</h1>
         <!-- Events section -->
-        <div class="events">
+        <div id="move-to-events" class="events">
           <img src="images/github.png" alt="" />
           <div class="events-desktop">
             <span class="heading">Event</span>
@@ -236,7 +307,7 @@
       <!-- End of Events and Latest section -->
   
       <!-- Subscription section -->
-      <div class="subscription">
+      <div id="move-to-subscription" class="subscription">
         <h2>
           Subscribe to our monthly newsletter and stay up to date with all news
           and events.
