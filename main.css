@@ -265,6 +265,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
+    flex: 1 1;
   }
   .carousal {
     padding: 60px;
@@ -273,6 +274,7 @@
 @media screen and (min-width: 768px) {
   .card {
     column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .construct h1 {
