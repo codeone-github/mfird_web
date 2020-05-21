@@ -56,6 +56,7 @@
   border-radius: 30px;
   width: 120px;
   text-align: center;
+  font-size: 16px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -92,11 +93,14 @@ footer {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .millat-heading h3 {
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
 }
 .list {
   list-style: none;
+}
+.list li {
+  font-size: 14px;
 }
 .interaction {
   margin-bottom: 32px;
@@ -116,7 +120,7 @@ footer h2 {
 .millat-heading img {
   width: 100px;
   height: 100px;
-  margin-right: 32px;
+  margin-right: 16px;
   margin-bottom: 0px;
 }
 .millat-heading {
@@ -124,7 +128,10 @@ footer h2 {
   display: flex;
   flex-direction: row;
 }
-
+.contact p {
+  max-width: 100px;
+  font-size: 14px;
+}
 /* Desktop version and tablet version */
 @media screen and (min-width: 1024px) {
   .events-and-news {
@@ -169,7 +176,7 @@ footer h2 {
     align-items: baseline;
   }
   .subscription h2 {
-    width: 50%;
+    width: 45%;
     text-align: justify;
   }
   .subscription form {
@@ -182,6 +189,7 @@ footer h2 {
   .subscription form input {
     margin-right: 16px;
     margin-bottom: 0px;
+    font-size: 14px;
   }
   footer {
     display: flex;
@@ -189,7 +197,7 @@ footer h2 {
     padding: 5% 10%;
   }
   .interaction {
-    width: 30%;
+    width: 120px;
   }
   .interaction p {
     font-size: 13px;
@@ -202,6 +210,15 @@ footer h2 {
   }
   .millat-heading img {
     margin-right: 16px;
+  }
+  .millat-heading h3 {
+    width: min-content;
+  }
+  footer h2 {
+    max-width: 94px;
+  }
+  footer {
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 700px) {
