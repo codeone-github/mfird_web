@@ -1,31 +1,17 @@
-
-// script for header part 
 var flag=1;
-function hit() {
+function displayMenu() {
     flag=flag+1;
-    if(flag%2==0){
-        document.getElementsByClassName("menu-icon")[0].setAttribute("class","menu-icon-new");
-        
-        document.getElementsByClassName("menu")[0].setAttribute("class","menu-new");
-    }
-    else{
-        document.getElementsByClassName("menu-icon-new")[0].setAttribute("class","menu-icon");
-        document.getElementsByClassName("menu-new")[0].setAttribute("class","menu");
-    }
-}
-
-   var focus_flag=0;
-   function focus_hit() {
-        focus_flag=1;
-        document.getElementsByClassName("menu-icon")[0].setAttribute("class","menu-icon-focussed");
+        if(flag%2==0){
+            document.getElementById("l2").setAttribute("id","l2-new");
+            document.getElementById("l1").setAttribute("id","l1-new");
+            document.getElementById("l3").setAttribute("id","l3-new");
+            document.getElementsByClassName("menu")[0].setAttribute("class","menu-displayed");
+        }
+        else{
+            document.getElementById("l2-new").setAttribute("id","l2");
+            document.getElementById("l1-new").setAttribute("id","l1");
+            document.getElementById("l3-new").setAttribute("id","l3");
+            document.getElementsByClassName("menu-displayed")[0].setAttribute("class","menu");
+        }
     
-   if(focus_flag==1){
-               setTimeout(revert,1000);
-    }
-
-    function revert() {
-        document.getElementsByClassName("menu-icon-focussed")[0].setAttribute("class","menu-icon");
-        focus_flag=0;
-    }
-   }
-// Script for header parts ends
+}
