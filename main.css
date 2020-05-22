@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -48,14 +48,14 @@ html{
   transform: rotate(215deg);
   transform-origin: 70% 100% 100%;
   margin-bottom: 10px;
-  transition: .2s ease-out;
+  transition: 0.2s ease-out;
   z-index: 1;
   background-color: white;
 }
 #l3-new {
   transform: rotate(-213deg);
   transform-origin: 55% -100%;
-  transition: .2s ease-out;
+  transition: 0.2s ease-out;
   z-index: 1;
   background-color: white;
 }
@@ -95,7 +95,7 @@ html{
   position: absolute;
   right: 0px;
   top: 0px;
-  
+
   background-color: #354463;
   transition: 5s ease-out;
   transition-duration: 5s;
@@ -181,12 +181,15 @@ html{
   overflow-x: hidden;
 }
 .take-action-section {
+  
   background-color: #354463;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: white;
   padding: 20px 0px;
-  margin-top: -5px;
+  position: relative;
+  top: -5px;
+  margin: 0 auto;
 }
 .take-action-items {
   width: 90%;
@@ -345,17 +348,17 @@ html{
   .take-action-items p {
     text-transform: capitalize;
   }
-.menu-items:hover{
-  transform: scale(1.15);
-  transition: 0.2s ease;
-}
+  .menu-items:hover {
+    transform: scale(1.15);
+    transition: 0.2s ease;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .menu {
     margin-right: 50px;
   }
-  .menu-items{
+  .menu-items {
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 45px;
@@ -399,16 +402,16 @@ html{
     margin-left: 70px;
   }
 }
-@media screen and (min-width:1300px){
-  .bulletin-wrapper{
+@media screen and (min-width: 1300px) {
+  .bulletin-wrapper {
     margin-left: 5px;
   }
 }
 @media screen and (min-width: 1440px) {
- .menu-items{
-   margin-left: 15px;
-   margin-right: 15px;
- }
+  .menu-items {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
   .take-action-head {
     margin-top: 100px;
   }
@@ -465,6 +468,7 @@ html{
     height: 417px;
     position: relative;
     left: 80px;
+    padding-bottom: 400px;
   }
   .bulletin-wrapper h2 {
     font-size: 55px;
@@ -475,7 +479,7 @@ html{
     height: 40px;
     position: relative;
     left: 15%;
-    margin-top: -55px;
+    margin-top: -70px;
   }
   .quote {
     width: fit-content;
