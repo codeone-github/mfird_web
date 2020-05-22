@@ -1,0 +1,1028 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.max-width-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.max-width {
+    background-color: #354463;
+    position: relative;
+    /* top: -5px; */
+    margin: 0 auto;
+}
+
+.head-logo img {
+    width: 100px;
+    margin-left: 15px;
+}
+
+.name h4 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+}
+
+.header-with-menu {
+    display: flex;
+}
+
+.menu-button {
+    background: none;
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+    margin-right: 30px;
+    z-index: 1;
+}
+
+
+/* for making hamburger and giving it effects */
+
+.lines {
+    z-index: 1;
+    width: 37px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #354463;
+    margin-bottom: 5px;
+    transition: 0.1s ease;
+}
+
+#l2-new {
+    display: none;
+}
+
+#l1-new {
+    transform: rotate(215deg);
+    transform-origin: 70% 100% 100%;
+    margin-bottom: 10px;
+    transition: 0.2s ease-out;
+    z-index: 1;
+    background-color: white;
+}
+
+#l3-new {
+    transform: rotate(-213deg);
+    transform-origin: 55% -100%;
+    transition: 0.2s ease-out;
+    z-index: 1;
+    background-color: white;
+}
+
+
+/* for giving flood font style */
+
+.quote {
+    font-family: flood-std, sans-serif;
+}
+
+.quotation {
+    font-family: flood-std, sans-serif;
+}
+
+
+/* for pushing logo and hamburger to extremes */
+
+.header-wrapper {
+    width: 100%;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* for hiding menu items */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    display: none;
+    background-color: #142850;
+    transition: 2s ease-out;
+}
+
+
+/* for displaying menu items */
+
+.menu-displayed {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #354463;
+    transition: 5s ease-out;
+    transition-duration: 5s;
+    z-index: -0.1;
+}
+
+
+/* giving padding between anchor tags in menu dropdown */
+
+.menu-items {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+
+/* giving style and flex direction for quotation and institute card and aligning to center */
+
+.quotation-with-name-and-take-action-head {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #142850;
+    align-items: center;
+}
+
+
+/* arranging contents inside quotation section to improve readability and design */
+
+.bulletin-wrapper {
+    height: 280px;
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
+}
+
+.name-of-institution {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* designing small box at top of millat card */
+
+.decoration {
+    background-color: #354463;
+    width: 50%;
+    height: 5vh;
+    position: relative;
+    left: 10%;
+    top: -5%;
+}
+
+.name-of-institution h2 {
+    color: #354463;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.quote {
+    font-family: flood-std, sans-serif;
+    font-weight: bold;
+    width: 90%;
+    margin: 20px auto;
+    font-family: flood-std, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+/* aligning mahatma gandhi text to little right */
+
+.quotation h4 {
+    text-transform: uppercase;
+    color: white;
+    font-family: flood-std, sans-serif;
+    position: relative;
+    left: 45%;
+}
+
+.take-action-head {
+    display: inline;
+}
+
+.take-action-head h4 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #354463;
+    padding: 5px;
+}
+
+.quotation-with-name-wrapper {
+    padding-bottom: 50px;
+    overflow-x: hidden;
+}
+
+.take-action-section {
+    padding: 10px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 85%;
+    margin: 0 auto;
+    background-color: #354463;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.take-action-items {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.take-action-items p {
+    text-transform: capitalize;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.take-action-section h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 425px) {
+    .bulletin-wrapper h2 {
+        font-size: 35px;
+    }
+    .bulletin-wrapper {
+        padding-bottom: 250px;
+        padding-top: 30px;
+    }
+    .decoration {
+        margin-top: -44px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu-button {
+        display: none;
+    }
+    .header-wrapper {
+        display: flex;
+        width: fit-content;
+    }
+    .header-with-menu {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0;
+        margin: 0 auto;
+        padding: 0;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+    .menu {
+        padding: 0;
+        margin: 0;
+    }
+    .logo-and-name-wrapper {
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+        width: fit-content;
+    }
+    .name h4 {
+        display: flex;
+        width: 40px;
+        font-size: 12px;
+        color: #354463;
+    }
+    .menu {
+        display: flex;
+    }
+    .logo-and-name-wrapper {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
+    .header-with-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: fit-content;
+    }
+    .menu-items {
+        color: #354463;
+        width: fit-content;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .menu-items:hover {
+        background-color: #354463;
+        color: white;
+    }
+    .quotation-with-name-and-take-action-head {
+        padding-left: 0;
+        padding-right: 0;
+        height: fit-content;
+    }
+    .quotation-with-name-wrapper {
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    .quotation {
+        width: 300px;
+        padding: 0;
+        margin: 0;
+    }
+    .quotation h4 {
+        margin: 0;
+        margin-top: 20px;
+        position: relative;
+    }
+    .quote {
+        display: inline;
+        padding: 0;
+        margin: 0;
+        font-size: 40px;
+        line-height: 50px;
+        word-spacing: 4px;
+        letter-spacing: 2px;
+    }
+    .bulletin-wrapper {
+        width: 350px;
+        height: fit-content;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .bulletin-wrapper h2 {
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: 20px;
+        height: fit-content;
+    }
+    .name-of-institution {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: 10px;
+        height: fit-content;
+    }
+    .take-action-section {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        padding: 0;
+        padding-right: 0px;
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+    .decoration {
+        margin-top: -65px;
+        margin-bottom: 20px;
+    }
+    .take-action-items {
+        margin: 20px;
+    }
+    .take-action-items h3 {
+        margin-bottom: 10px;
+    }
+    .take-action-items p {
+        text-transform: capitalize;
+    }
+    .menu-items:hover {
+        transform: scale(1.15);
+        transition: 0.2s ease;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .take-action-items {
+        margin: 20px;
+    }
+    .max-width {
+        padding-top: 30px;
+    }
+    .menu {
+        margin-right: 50px;
+    }
+    .menu-items {
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 45px;
+        padding: 12px;
+    }
+    .header-wrapper {
+        margin-left: 18px;
+    }
+    .quote {
+        font-size: 52px;
+        letter-spacing: 2px;
+        text-align: left;
+        line-height: 60px;
+    }
+    .quotation {
+        width: 450px;
+    }
+    .bulletin-wrapper {
+        margin-left: 95px;
+    }
+    .quotation-with-name-and-take-action-head {
+        padding-top: 50px;
+    }
+    .take-action-head {
+        margin-top: 50px;
+    }
+    .take-action-section {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .bulletin-wrapper {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .bulletin-wrapper {
+        margin-left: 5px;
+    }
+    .header-with-menu {
+        margin: 0 auto;
+    }
+    .logo-and-name-wrapper {
+        margin-left: -30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header-with-menu {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-items {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .menu {
+        margin-right: -30px;
+    }
+    .take-action-head {
+        margin-top: 100px;
+    }
+    .take-action-items {
+        margin-top: 32px;
+    }
+    .take-action-items h3 {
+        font-size: 28px;
+    }
+    .take-action-items p {
+        text-transform: capitalize;
+        line-height: 35px;
+        word-spacing: 5px;
+    }
+    .logo-and-name-wrapper {
+        margin-left: 0;
+        margin-top: 16px;
+        margin-bottom: 15px;
+        margin-left: -60px;
+    }
+    .logo-and-name-wrapper img {
+        width: 105px;
+        height: 97px;
+    }
+    .name h4 {
+        font-size: 22px;
+        width: 292px;
+        height: 63px;
+        margin-top: -10px;
+    }
+    .menu-items {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .quotation-with-name-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 72px;
+        overflow: hidden;
+        margin-left: 0px;
+        padding: 0px;
+        margin-bottom: 50px;
+    }
+    .bulletin-wrapper {
+        height: 400px;
+        width: 545px;
+        height: 417px;
+        position: relative;
+        left: 80px;
+        padding-bottom: 400px;
+    }
+    .bulletin-wrapper h2 {
+        font-size: 55px;
+        width: 416px;
+    }
+    .decoration {
+        width: 160px;
+        height: 40px;
+        position: relative;
+        left: 15%;
+        margin-top: -70px;
+    }
+    .quote {
+        width: fit-content;
+        letter-spacing: 2px;
+        line-height: 100px;
+        font-size: 60px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: auto;
+        right: auto;
+    }
+    .quotation {
+        width: 500px;
+    }
+    .quotation h4 {
+        position: relative;
+        left: 300px;
+    }
+    .take-action-head h4 {
+        font-size: 16px;
+    }
+    .take-action-section {
+        max-width: 1200px;
+        margin: auto;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 289px) {
+    .bulletin-wrapper {
+        height: fit-content;
+        width: 90%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .decoration {
+        margin-top: -30px;
+    }
+    .bulletin-wrapper h2 {
+        height: fit-content;
+    }
+}
+/* card-section */
+/* card start */
+.society {
+  background-color: rgb(20, 40, 80);
+  padding: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.society-header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.what-we-do {
+  background-color: white;
+  text-decoration: none;
+  padding: 8px;
+  display: inline-block;
+}
+.society h1 {
+  color: white;
+  margin: 30px 0px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card1 {
+  background-color: white;
+  min-width: 200px;
+  min-height: 400px;
+  margin: 20px 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card1 img {
+  width: 100%;
+}
+.card1 h3 {
+  margin: 10px 20px;
+}
+.read {
+  padding: 20px;
+}
+.read a {
+  background-color: rgb(118, 44, 172);
+  text-decoration: none;
+  padding: 8px;
+  display: inline-block;
+  color: white;
+  margin-top: 20px;
+  border-radius: 30px;
+  width: 120px;
+  text-align: center;
+}
+/* card-end */
+
+/* stories start */
+.secure-future {
+  background: url(images/did-you-know-background-min.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  padding: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.secure-future-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.construct h1 {
+  background: linear-gradient(rgba(172, 189, 211, 0.2), rgb(235, 243, 252, 0));
+  font-family: flood-std, sans-serif;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+.construct a {
+  background-color: rgb(118, 44, 172);
+  color: white;
+  width: 120px;
+  padding: 8px;
+  display: inline-block;
+  margin: 20px 0px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+}
+.did-h {
+  position: relative;
+  top: -55px;
+}
+
+.did-h h5 {
+  display: inline-block;
+  background-color: rgb(53, 68, 99);
+  color: white;
+  padding: 4px;
+  text-align: center;
+}
+.did-you {
+  min-height: 180px;
+  background-color: white;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+}
+.did {
+  padding: 40px 20px;
+}
+.did-you-icons {
+  color: rgb(118, 44, 172);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.did-you-icons a {
+  margin-bottom: 20px;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: rgb(118, 44, 172);
+  color: white;
+}
+/* stories end */
+.carousal {
+  padding: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.stories {
+  background-color: rgb(20, 40, 80);
+  color: white;
+  padding: 20px;
+  margin: 30px 20px 0px 20px;
+}
+.stories a {
+  background-color: rgb(118, 44, 172);
+  text-decoration: none;
+  padding: 8px;
+  display: block;
+  color: white;
+  margin: 10px 0px;
+  border-radius: 30px;
+  width: 120px;
+  text-align: center;
+}
+.stories p {
+  background-color: rgb(53, 68, 99);
+  color: white;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  margin-top: -37px;
+}
+.stories h2 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 1;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #1d1212;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 576px) {
+  .card {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    flex: 1 1;
+  }
+  .carousal {
+    padding: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .construct h1 {
+    width: 70%;
+    background: none;
+  }
+  .did-you-know {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .did-you {
+    width: 320px;
+    margin-right: 20px;
+  }
+
+  .stories {
+    padding: 20px 40px;
+    height: 280px;
+    margin: 10px -40px 0px 0px;
+    z-index: 1;
+  }
+  .carousal {
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-box img {
+    height: 100%;
+    height: 340px;
+  }
+  .prev,
+  .next {
+    top: 40%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .society {
+    padding: 10px 20px;
+  }
+
+  .construct h1 {
+    width: 60%;
+  }
+
+  .did-you {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card1 {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .secure-future-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .construct {
+    margin-top: 30px;
+  }
+  .construct h1 {
+    width: 60%;
+    font-size: 50px;
+  }
+
+  .dots {
+    position: absolute;
+    left: 3%;
+  }
+  .stories {
+    width: 50%;
+    padding: 40px;
+    height: 240px;
+    margin: 10px -40px 0px 0px;
+    z-index: 1;
+  }
+  .stories-img {
+    width: 50%;
+    height: 350px;
+  }
+  .stories p {
+    margin-top: -60px;
+  }
+  .prev,
+  .next {
+    color: black;
+    top: 50%;
+    font-size: 25px;
+  }
+  .prev {
+    left: -1%;
+    margin-left: -10px;
+  }
+  .next {
+    right: -1%;
+    margin-right: -10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card1 {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+  .construct h1 {
+    width: 65%;
+    font-size: 60px;
+  }
+  .dots {
+    left: 10%;
+  }
+  .prev {
+    top: 40%;
+    margin-left: -30px;
+    font-size: 30px;
+  }
+  .next {
+    top: 40%;
+    margin-right: -30px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .construct h1 {
+    width: 60%;
+  }
+  .did-you {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dots {
+    left: 18%;
+  }
+}
+
