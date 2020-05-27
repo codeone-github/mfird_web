@@ -116,7 +116,7 @@ html {
 
 /* for displaying menu items */
 
-.menu-displayed {
+.menu-displayed{
   padding-top: 80px;
   padding-bottom: 50px;
   display: flex;
@@ -130,7 +130,9 @@ html {
   transition-duration: 5s;
   z-index: -0.1;
 }
-
+#no-display{
+  display: none;
+}
 /* giving padding between anchor tags in menu dropdown */
 
 .menu-items {
