@@ -1,17 +1,19 @@
-var flag = 1;
+var flag = 0;
 
 function displayMenu() {
-    flag = flag + 1;
-    if (flag % 2 == 0) {
+   
+    if (flag== 0) {
         document.getElementById("l2").setAttribute("id", "l2-new");
         document.getElementById("l1").setAttribute("id", "l1-new");
         document.getElementById("l3").setAttribute("id", "l3-new");
         document.getElementsByClassName("menu")[0].setAttribute("class", "menu-displayed");
+        flag=1;
     } else {
         document.getElementById("l2-new").setAttribute("id", "l2");
         document.getElementById("l1-new").setAttribute("id", "l1");
         document.getElementById("l3-new").setAttribute("id", "l3");
         document.getElementsByClassName("menu-displayed")[0].setAttribute("class", "menu");
+        flag=0;
     }
 
 }
@@ -47,4 +49,14 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
+}
+function hideMenu() {
+   document.getElementsByClassName("menu-displayed")[0].setAttribute("id","no-display");
+   document.getElementById("l2-new").setAttribute("id", "l2");
+   document.getElementById("l1-new").setAttribute("id", "l1");
+   document.getElementById("l3-new").setAttribute("id", "l3");
+   document.getElementById("no-display").setAttribute("class","menu");
+    document.getElementById("no-display").setAttribute("id","");
+   flag=0;
+
 }
