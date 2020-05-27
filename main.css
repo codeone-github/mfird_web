@@ -657,12 +657,14 @@ html {
   min-width: 200px;
   min-height: 400px;
   margin: 20px 0px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-radius: 5px;
+  /* border-top-right-radius: 5px; */
 }
 
 .card1 img {
   width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .card1 h3 {
@@ -980,10 +982,10 @@ html {
 }
 
 @media screen and (min-width: 1024px) {
-  .card1 {
+  /* .card1 {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-  }
+  } */
   .secure-future-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1030,10 +1032,10 @@ html {
 }
 
 @media screen and (min-width: 1200px) {
-  .card1 {
+  /* .card1 {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-  }
+  } */
   .construct h1 {
     width: 65%;
     font-size: 60px;
