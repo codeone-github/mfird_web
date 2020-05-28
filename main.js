@@ -53,9 +53,9 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 function hide() {
-    document.getElementsByClassName("menu-displayed")[0].setAttribute("class", "menu");
     document.getElementById("l2-new").setAttribute("id", "l2");
-        document.getElementById("l1-new").setAttribute("id", "l1");
-        document.getElementById("l3-new").setAttribute("id", "l3");
+    document.getElementById("l1-new").setAttribute("id", "l1");
+    document.getElementById("l3-new").setAttribute("id", "l3");
+   document.getElementsByClassName("menu-displayed")[0].setAttribute("class", "menu");
         flag=0;
 }

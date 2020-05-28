@@ -57,12 +57,12 @@ html {
   transition: 1s ease;
 }
 
-#l2-new {
+#l3-new {
   display: none;
 }
 
 #l1-new {
-  transform: translateY(10px) rotate(-45deg);
+  transform: translateY(12px) translateX(-3px) rotate(-40deg);
   transform-origin: 70% 100% 100%;
   margin-bottom: 10px;
   transition: 0.8s ease-out;
@@ -70,8 +70,8 @@ html {
   background-color: white;
 }
 
-#l3-new {
-  transform: translateY(-1px) translateX(5px) rotate(45deg);
+#l2-new {
+  transform: translateY(0px) rotate(40deg);
   transform-origin: 55% -100%;
   transition: 0.8s ease-out;
   z-index: 1;
@@ -109,7 +109,7 @@ html {
   display: flex;
   flex-direction: column;
   width: 0vw;
-  background-color: #142850;
+  background-color: #354463;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -131,7 +131,7 @@ html {
   display: flex;
   flex-direction: column;
   width: 60vw;
-  background-color: #142850;
+  background-color: #354463;
   position: absolute;
   top: 0px;
   right: 0px;
