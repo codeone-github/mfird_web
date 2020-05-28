@@ -41,8 +41,8 @@ html {
   height: 25px;
   border: none;
   outline: none;
-  margin-right: 30px;
-  z-index: 1;
+  margin-right: 35px;
+  z-index: 2;
 }
 
 /* for making hamburger and giving it effects */
@@ -54,7 +54,7 @@ html {
   border-radius: 10px;
   background-color: #354463;
   margin-bottom: 5px;
-  transition: 0.1s ease;
+  transition: 1s ease;
 }
 
 #l2-new {
@@ -62,18 +62,18 @@ html {
 }
 
 #l1-new {
-  transform: rotate(215deg);
+  transform: translateY(10px) rotate(-45deg);
   transform-origin: 70% 100% 100%;
   margin-bottom: 10px;
-  transition: 0.2s ease-out;
+  transition: 0.8s ease-out;
   z-index: 1;
   background-color: white;
 }
 
 #l3-new {
-  transform: rotate(-213deg);
+  transform: translateY(-1px) translateX(5px) rotate(45deg);
   transform-origin: 55% -100%;
-  transition: 0.2s ease-out;
+  transition: 0.8s ease-out;
   z-index: 1;
   background-color: white;
 }
@@ -108,31 +108,39 @@ html {
 .menu {
   display: flex;
   flex-direction: column;
-  width: 50vw;
-  display: none;
+  width: 0vw;
   background-color: #142850;
-  transition: 2s ease-out;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  overflow: hidden;
+  z-index: 1;
+  transition: 1s ease-in-out;
+  border-radius: 4px;
+}
+#b1 {
+  margin-top: 90px;
+}
+#b4 {
+  margin-bottom: 50px;
 }
 
 /* for displaying menu items */
 
-.menu-displayed{
-  padding-top: 80px;
-  padding-bottom: 50px;
+.menu-displayed {
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 60vw;
+  background-color: #142850;
   position: absolute;
-  right: 0px;
   top: 0px;
-  background-color: #354463;
-  transition: 5s ease-out;
-  transition-duration: 5s;
-  z-index: -0.1;
+  right: 0px;
+  overflow: hidden;
+  z-index: 1;
+  transition: 1s ease-in-out;
+  border-radius: 4px;
 }
-#no-display{
-  display: none;
-}
+
 /* giving padding between anchor tags in menu dropdown */
 
 .menu-items {
@@ -143,6 +151,10 @@ html {
   color: white;
   padding-bottom: 15px;
   padding-top: 15px;
+  width: 200px;
+  text-align: center;
+  font-weight: 600;
+
 }
 
 /* giving style and flex direction for quotation and institute card and aligning to center */
@@ -270,6 +282,13 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+  #b1 {
+    margin-top: 0px;
+  }
+  #b4 {
+    margin-bottom: 0px;
+    margin-right: 5px;
+  }
   .menu-button {
     display: none;
   }
@@ -331,7 +350,10 @@ html {
     width: fit-content;
     font-size: 15px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 25px;
+    width:fit-content;
+    
+    font-weight: 500;
   }
   .menu-items:hover {
     background-color: #354463;
@@ -420,7 +442,7 @@ html {
     text-transform: capitalize;
   }
   .menu-items:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
     transition: 0.2s ease;
   }
 }
@@ -445,6 +467,7 @@ html {
     margin-right: 10px;
     border-radius: 45px;
     padding: 12px;
+    width: fit-content;
   }
   .quote {
     font-size: 52px;
@@ -474,29 +497,27 @@ html {
   }
 }
 
-
 @media screen and (min-width: 1300px) {
-.logo-and-name-wrapper{
+  .logo-and-name-wrapper {
     position: relative;
     left: -30px;
-}
+  }
   .header-with-menu {
     margin: 0 auto;
   }
-  .quotation-with-name-wrapper{
-      justify-content: space-evenly;
+  .quotation-with-name-wrapper {
+    justify-content: space-evenly;
   }
-  .bulletin-wrapper{
-      position: relative;
-      left: -100px;
+  .bulletin-wrapper {
+    position: relative;
+    left: -100px;
   }
-
 }
-@media screen and (min-width:1350px){
-    .logo-and-name-wrapper{
-        position: relative;
-        left: -120px;
-    }
+@media screen and (min-width: 1350px) {
+  .logo-and-name-wrapper {
+    position: relative;
+    left: -120px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -505,11 +526,10 @@ html {
     display: flex;
     justify-content: space-between;
   }
-  
+
   .menu {
-    
     position: relative;
-    right: 140px;
+    right: 30px;
   }
   .take-action-head {
     margin-top: 100px;
@@ -545,8 +565,8 @@ html {
   .menu-items {
     font-size: 20px;
     margin-left: 10px;
-    margin-right: 10px;
-    width: 200px;
+    margin-right: 0px;
+    width: fit-content;
   }
   .quotation-with-name-wrapper {
     display: flex;
@@ -659,14 +679,12 @@ html {
   min-width: 200px;
   min-height: 400px;
   margin: 20px 0px;
-  border-radius: 5px;
-  /* border-top-right-radius: 5px; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .card1 img {
   width: 100%;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
 }
 
 .card1 h3 {
@@ -984,10 +1002,10 @@ html {
 }
 
 @media screen and (min-width: 1024px) {
-  /* .card1 {
+  .card1 {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-  } */
+  }
   .secure-future-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1034,10 +1052,10 @@ html {
 }
 
 @media screen and (min-width: 1200px) {
-  /* .card1 {
+  .card1 {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-  } */
+  }
   .construct h1 {
     width: 65%;
     font-size: 60px;
