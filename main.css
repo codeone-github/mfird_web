@@ -154,7 +154,6 @@ html {
   width: 200px;
   text-align: center;
   font-weight: 600;
-
 }
 
 /* giving style and flex direction for quotation and institute card and aligning to center */
@@ -311,7 +310,7 @@ html {
     padding: 0;
     margin: 0;
     position: relative;
-    right: 20px;
+    right: 75px;
   }
   .logo-and-name-wrapper {
     margin: 0;
@@ -351,8 +350,8 @@ html {
     font-size: 15px;
     padding: 10px;
     border-radius: 25px;
-    width:fit-content;
-    
+    width: fit-content;
+
     font-weight: 500;
   }
   .menu-items:hover {
@@ -459,9 +458,7 @@ html {
   .max-width {
     padding-top: 30px;
   }
-  .menu {
-    margin-right: 25px;
-  }
+
   .menu-items {
     margin-left: 10px;
     margin-right: 10px;
