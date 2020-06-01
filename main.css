@@ -448,7 +448,7 @@ html {
 }
 
 @media screen and (min-width: 1024px) {
-  .menu{
+  .menu {
     right: 80px;
   }
   .quotation-with-name-wrapper {
@@ -680,8 +680,8 @@ html {
   min-width: 200px;
   min-height: 400px;
   margin: 20px 0px;
-  
-  border-radius: 5px
+
+  border-radius: 5px;
 }
 
 .card1 img {
@@ -1005,7 +1005,6 @@ html {
 }
 
 @media screen and (min-width: 1024px) {
-  
   .secure-future-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1052,7 +1051,6 @@ html {
 }
 
 @media screen and (min-width: 1200px) {
-  
   .construct h1 {
     width: 65%;
     font-size: 60px;
@@ -1266,6 +1264,38 @@ footer h2 {
   .events-and-news h1 {
     font-size: 40px;
   }
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+    flex-wrap: wrap;
+  }
+  .interaction {
+    width: 170px;
+  }
+  .interaction p {
+    line-height: 23px;
+    max-width: 119px;
+    font-size: 13px;
+  }
+  .list li {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .interaction span {
+    font-size: 18px;
+  }
+  .millat-heading img {
+    margin-right: 16px;
+  }
+  .millat-heading {
+    width: 100%;
+  }
+  .millat-heading h3 {
+    letter-spacing: 1px;
+    font-size: 28px;
+    font-weight: 900;
+  }
 }
 
 /* laptop version */
@@ -1338,6 +1368,9 @@ footer h2 {
   .interaction {
     width: 120px;
   }
+  .interaction span {
+    font-size: 17px;
+  }
   .interaction p {
     font-size: 13px;
     line-height: 20px;
@@ -1350,8 +1383,12 @@ footer h2 {
   .millat-heading img {
     margin-right: 16px;
   }
+  .millat-heading {
+    width: unset;
+  }
   .millat-heading h3 {
     width: min-content;
+    font-size: 19px;
   }
   footer h2 {
     max-width: 94px;
